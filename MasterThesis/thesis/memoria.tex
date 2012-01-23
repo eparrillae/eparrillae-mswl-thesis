@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% M.Sc. Libre Software URJC 2012
+%
+% Master Thesis
+% Esther Parrilla-Endrino (eparrillae@gmail.com)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{book} 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black]{hyperref} 
+\input{cc_beamer}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{verbatim}
+\usepackage{fancyhdr} 
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{caption3} 
+\DeclareCaptionOption{parskip}[]{} 
+\usepackage[small]{caption}
+
+\title {Trade-Off Analysis of FLOSS technologies\\ 
+for implementing Human Machine Interfaces}
+\author{Esther Parrilla-Endrino (eparrillae@gmail.com)\\
+ M.Sc. Libre Software URJC}
+\date{\today}
+
+\renewcommand{\baselinestretch}{1.5}  %% Interlineado
+
+\begin{document}
+
+%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%
+\begin{titlepage}
+\begin{center}
+\begin{tabular}[c]{c c}
+\includegraphics[scale=0.25]{img/logo.png} &
+\begin{tabular}[b]{l}
+\Huge
+\textsf{UNIVERSIDAD} \\
+\Huge
+\textsf{REY JUAN CARLOS} \\
+\end{tabular}
+\\
+\end{tabular}
+
+\vspace{3cm}
+
+\Large
+Free Libre Open Source Software Master
+
+\vspace{0.4cm}
+
+\large
+Academic Year 2011/2012
+
+\vspace{0.8cm}
+
+Master Thesis
+
+\vspace{2.5cm}
+
+\LARGE
+Trade-Off Analysis of FLOSS technologies 
+for implementing Human Machine Interfaces
+
+\vspace{4cm}
+
+\large
+Author: Esther Parrilla-Endrino \\
+Tutor: Prof. Gregorio Robles, Prof. Daniel Izquierdo 
+\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\thispagestyle{empty}
+\vspace{5cm}
+\begin{flushright}
+\begin{large}
+Copyright \copyright 2012 Esther Parrilla-Endrino.\\
+Some Rights Reserved.\\
+This work is licensed under the\\
+Creative Commons Attribution 3.0 License.\\
+To view a copy of this license, visit\\
+\url{http://creativecommons.org/licenses/by/3.0/}\\
+or send a letter to Creative Commons,\\
+543 Howard Street, 5th Floor, San Francisco,\\
+California, 94105, USA.\\
+\end{large}
+\end{flushright}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents  %% Creando índice
+
+\listoffigures  %% índice de figuras
+
+\listoftables %% índide de tablas
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\refname}{Bibliography}
+\addtolength{\parskip}{\baselineskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Summary}
+\label{chap:summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Overview}
+\label{chap:overview}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Objectives}
+\label{chap:objectives}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{State-of-the-Art technologies}
+\label{chap:tech}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Metrics definition}
+\label{chap:metrics}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{OpenBRR Analysis}
+\label{chap:openbrr}
+
+\section{What is OpenBRR?}
+\label{sec:openbrr2}
+
+\section{Templates}
+\label{sec:templates}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Results Comparison}
+\label{chap:results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Conclusions}
+\label{chap:conclusions}
+
+
+\section{Lessons Learnt}
+\label{sec:lessons}
+
+
+\section{Future Work}
+\label{sec:future}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+\chapter{Appendix A}
+\label{app:appenda}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{25}
+\bibliographystyle{alpha} 
+
+%% ref al white paper de openbrr
+
+\bibitem{Android}\textbf{Android}\\
+{\footnotesize\url{http://www.android.com/}}
+
+
+\end{thebibliography}
+\end{document}
