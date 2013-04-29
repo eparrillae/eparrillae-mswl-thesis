@@ -24,7 +24,7 @@
 \DeclareCaptionOption{parskip}[]{} 
 \usepackage[small]{caption}
 
-\title {Trade-Off Analysis of Open Source HTML5 Mobile App Frameworks}
+\title {Trade-Off Analysis of Open Source Web Mobile App Frameworks}
 \author{Esther Parrilla-Endrino (eparrillae@gmail.com)\\
  M.Sc. Libre Software URJC}
 \date{\today}
@@ -64,7 +64,7 @@ Master Thesis
 \vspace{2.5cm}
 
 \LARGE
-Trade-Off Analysis of Open Source HTML5 Mobile App Frameworks
+Trade-Off Analysis of Open Source Web Mobile App Frameworks
 
 \vspace{4cm}
 
@@ -104,23 +104,30 @@ California, 94105, USA.\\
 \chapter*{Summary}
 \label{chap:summary}
 
-The main goal of this analysis is to perform a trade-off of some of the most popular FLOSS\footnote{https://www.fsf.org/about/what-is-free-software} HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} compliant frameworks used for development of mobile apps.
+The main goal of this analysis is to perform a trade-off of some of the most popular FLOSS\footnote{https://www.fsf.org/about/what-is-free-software} Web\footnote{http://www.w3.org/html/wg/drafts/html/master/} compliant frameworks used for development of mobile apps.
 
-The fact that all frameworks taken under consideration in this study are Open Source solutions is a consequence of different subjects I studied during the Master Thesis and the idea that this kind of solutions bring more benefits to the development community instead of closed solutions.
+In my daily work I play the role of Technical Manager who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
 
-All the work done for this Master Thesis is Open Source material licensed under a Creative Commons Attribution 3.0 License\footnote{http://creativecommons.org/licenses/by/3.0/}, it has been developed using GitHub FLOSS repository and can be downloaded from the following url:
+For that reason I wanted to dedicate my Master Thesis to this kind of solutions, by doing the exercise of performing a deep search in the existing FLOSS mobile app frameworks, selecting a couple of the most popular ones and then comparing their capabilities using a well-formed system like OpenBRR brings to me the opportunity to learn more about these developments and this knowledge could be useful in the future for my professional career.
+
+All the work done for this Master Thesis is Open Source material licensed under a Creative Commons Attribution 3.0 License\footnote{http://creativecommons.org/licenses/by/3.0/}, it has been developed using GitHub repository and can be downloaded from the following url:
 
 \url{
 https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/thesis}
+
+% GitHub project screenshot, explain why GitHub, one of the forges studied in the Master
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Overview}
 \label{chap:overview}
 
-% describe here HTML5, mobile apps 
+Nowadays mobile devices such as mobile phones, tablets etc... have become the preferred tools for communicating with each other, for that reason there are lots of JavaScript/AJAX libraries and frameworks specifically built for the Mobile Web. 
+These solutions enable web developers to quickly and easily create HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/}/CSS3\footnote{http://www.w3.org/TR/CSS/} based mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser.
+
+
 % describe mobile HTML5 apps versus native apps (Android etc...)
-% add here list of benefits of FLOSS solutions
+
 
 % http://blogs.learnnowonline.com/blog/bid/265210/Distribution-Monetization-2-Areas-Where-HMTL5-May-Overtake-Native-Apps
 
@@ -128,16 +135,28 @@ https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/th
 
 % http://blog.pluralsight.com/2012/05/14/comparison-mobile-framework-solutions-spring-2012/
 
+% why trade-off using metrics, why OpenBRR, importance of code quality
+
+% explain benefits of open source solutions
+
+The fact that all frameworks taken under consideration in this study are Open Source solutions is a consequence of different subjects I studied during the Master Thesis and the idea that this kind of solutions bring more benefits to the development community instead of closed solutions.
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Objectives}
 \label{chap:objectives}
 
-In my daily work I play the role of Technical Manager who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
+The objectives of this Master Thesis were defined and agreed with my tutors and can be summarized in the following list:
 
-For that reason I wanted to dedicate my Master Thesis to this kind of solutions, by doing the exercise of performing a deep search in the existing FLOSS mobile app frameworks, selecting a subset of the most popular ones and then comparing their capabilities using a well-formed system like OpenBRR brings to me the opportunity to learn more about these developments and this knowledge could be useful in the future for my professional career.
-
-Also for people who would like to start developing mobile applications this study can be useful as a baseline to decide which solution could fit better in their own developments.
+\begin{itemize}
+\item Select a couple of representative Open Source web-based frameworks for developing mobile apps from the existing solutions currently available in the market.
+\item Set a checklist of points to be analyzed for each solution in the form of well-defined metrics that can be properly measured.
+\item Analyze each solution using the OpenBRR methodology, setting different weights and scores for each category according to this model. Spreadsheets shall be used for automating this process.
+\item Summarize pros and contras of each solution.
+\item Perform a comparison of the results for each solution taking as a baseline the final version of each spreadsheet and also applying a SWOT comparision analysis on top of OpenBRR.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -150,6 +169,8 @@ The following frameworks have been selected among the most popular existing ones
  \item jQuery Mobile: \url{http://jquerymobile.com/}
  \item Sencha Touch: \url{http://www.sencha.com/products/touch}
 \end{itemize}
+
+% explain that these framworks are currently the most popular and are 2hosted" withoin other bigger projects 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -227,6 +248,11 @@ information about open source software projects. Some metrics present in Ohloh
 site are provided by Ohloh specific tools and others are provided by gathering
 the information provided by Ohloh users for their own projects or the projects
 they are interested in.
+
+% talk about forges in the master
+
+% https://www.ohloh.net/p/jquerymobile
+% https://www.ohloh.net/p/jQuery
 
 %% say here that other data sources we sudied in the master like FLOSSMetrics 
 %are old and have no data on this
@@ -358,8 +384,13 @@ https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/th
  \item Sencha Touch OpenBRR spreadsheet:
 \url{
 https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/thesis/OpenBRR_Templates/BRR_Template_Sencha.ods}
+\end{itemize}
 
 % add here score results when spreadsheets are finished!
+
+
+\section{SWOT Analysis}
+\label{sec:swot}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
