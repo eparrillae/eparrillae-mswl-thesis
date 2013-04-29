@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% M.Sc. Libre Software URJC 2012
+% M.Sc. Libre Software URJC 2013
 %
 % Master Thesis
 % Esther Parrilla-Endrino (eparrillae@gmail.com)
@@ -24,17 +24,16 @@
 \DeclareCaptionOption{parskip}[]{} 
 \usepackage[small]{caption}
 
-\title {Trade-Off Analysis of FLOSS technologies\\ 
-for implementing Human Machine Interfaces}
+\title {Trade-Off Analysis of Open Source HTML5 Mobile App Frameworks}
 \author{Esther Parrilla-Endrino (eparrillae@gmail.com)\\
  M.Sc. Libre Software URJC}
 \date{\today}
 
-\renewcommand{\baselinestretch}{1.5}  %% Interlineado
+\renewcommand{\baselinestretch}{1.5}  
 
 \begin{document}
 
-%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% First Page %%%%%%%%%%%%%%%%
 \begin{titlepage}
 \begin{center}
 \begin{tabular}[c]{c c}
@@ -56,7 +55,7 @@ Free Libre Open Source Software Master
 \vspace{0.4cm}
 
 \large
-Academic Year 2011/2012
+Academic Year 2012/2013
 
 \vspace{0.8cm}
 
@@ -65,14 +64,13 @@ Master Thesis
 \vspace{2.5cm}
 
 \LARGE
-Trade-Off Analysis of FLOSS technologies 
-for implementing Human Machine Interfaces
+Trade-Off Analysis of Open Source HTML5 Mobile App Frameworks
 
 \vspace{4cm}
 
 \large
 Author: Esther Parrilla-Endrino \\
-Tutor: Prof. Gregorio Robles, Prof. Daniel Izquierdo 
+Tutors: Prof. Gregorio Robles, Prof. Daniel Izquierdo 
 \end{center}
 \end{titlepage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,7 +80,7 @@ Tutor: Prof. Gregorio Robles, Prof. Daniel Izquierdo
 \vspace{5cm}
 \begin{flushright}
 \begin{large}
-Copyright \copyright 2012 Esther Parrilla-Endrino.\\
+Copyright \copyright 2013 Esther Parrilla-Endrino.\\
 Some Rights Reserved.\\
 This work is licensed under the\\
 Creative Commons Attribution 3.0 License.\\
@@ -94,18 +92,9 @@ California, 94105, USA.\\
 \end{large}
 \end{flushright}
 
-
 \newpage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\tableofcontents  %% Creando índice
-
-\listoffigures  %% índice de figuras
-
-\listoftables %% índide de tablas
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents  %% contents index
 
 \renewcommand{\refname}{Bibliography}
 \addtolength{\parskip}{\baselineskip}
@@ -115,25 +104,53 @@ California, 94105, USA.\\
 \chapter*{Summary}
 \label{chap:summary}
 
+The main goal of this analysis is to perform a trade-off of some of the most popular FLOSS\footnote{https://www.fsf.org/about/what-is-free-software} HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} compliant frameworks used for development of mobile apps.
+
+The fact that all frameworks taken under consideration in this study are Open Source solutions is a consequence of different subjects I studied during the Master Thesis and the idea that this kind of solutions bring more benefits to the development community instead of closed solutions.
+
+All the work done for this Master Thesis is Open Source material licensed under a Creative Commons Attribution 3.0 License\footnote{http://creativecommons.org/licenses/by/3.0/}, it has been developed using GitHub FLOSS repository and can be downloaded from the following url:
+
+\url{
+https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/thesis}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Overview}
 \label{chap:overview}
+
+% describe here HTML5, mobile apps 
+% describe mobile HTML5 apps versus native apps (Android etc...)
+% add here list of benefits of FLOSS solutions
+
+% http://blogs.learnnowonline.com/blog/bid/265210/Distribution-Monetization-2-Areas-Where-HMTL5-May-Overtake-Native-Apps
+
+% http://sixrevisions.com/mobile/native-app-vs-mobile-web-app-comparison/
+
+% http://blog.pluralsight.com/2012/05/14/comparison-mobile-framework-solutions-spring-2012/
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Objectives}
 \label{chap:objectives}
 
+In my daily work I play the role of Technical Manager who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
+
+For that reason I wanted to dedicate my Master Thesis to this kind of solutions, by doing the exercise of performing a deep search in the existing FLOSS mobile app frameworks, selecting a subset of the most popular ones and then comparing their capabilities using a well-formed system like OpenBRR brings to me the opportunity to learn more about these developments and this knowledge could be useful in the future for my professional career.
+
+Also for people who would like to start developing mobile applications this study can be useful as a baseline to decide which solution could fit better in their own developments.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{State-of-the-Art technologies}
+\chapter{Selected Frameworks}
 \label{chap:tech}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The following frameworks have been selected among the most popular existing ones:
 
-\chapter{Metrics definition}
-\label{chap:metrics}
+\begin{itemize}
+ \item jQuery Mobile: \url{http://jquerymobile.com/}
+ \item Sencha Touch: \url{http://www.sencha.com/products/touch}
+ \item DHTMLX Touch: \url{http://dhtmlx.com/touch/}
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -143,13 +160,217 @@ California, 94105, USA.\\
 \section{What is OpenBRR?}
 \label{sec:openbrr2}
 
-\section{Templates}
-\label{sec:templates}
+The Business Readiness Rating model (OpenBRR)\cite{OpenBRRWhitepaper} is
+intended to help IT managers assess which Open Source software would be most suitable for their needs. Open Source users can also share their evaluation ratings with potential adopters, continuing the virtuous cycle and “architecture of participation” of open
+source.
+
+The initiative is lead by the Carnegie Mellon West University, Spike Source,
+Intel and O’Reilly’s Code Zoo and offer proposals for standardizing different
+types of evaluation data and grouping them into categories.
+
+The framework suggests the following metrics to be analyzed and evaluated:
+\begin{itemize}
+\item Functionality
+\item Usability
+\item Quality
+\item Security
+\item Performance
+\item Scalability
+\item Architecture
+\item Support
+\item Documentation
+\item Adoption
+\item Community
+\item Professionalism
+\end{itemize}
+
+The model is composed of the following phases:
+\begin{itemize}
+\item Phase 1 - Quick Assessment: defining and ranking of metrics and categories
+according to their importance within the product that is going to be evaluated.
+\item Phase 2 - Target usage assessment: Set the necessary category and metric
+weights according to the project's goals.
+\item Phase 3 - Data collection and processing: Gather data for each metric used
+in each category rating, and calculate the applied weighting for each metric,
+spreadsheets are used for this purpose.
+\item Phase 4 - Data translation: Use category ratings and the functional
+orientation weighting factors to calculate the Business Readiness Rating score
+and publish the software’s Business Readiness Rating score.
+\end{itemize}
+
+The Business Readiness Rating model offers a trusted and open framework for
+software evaluation, this model aims to accelerate the software evaluation
+process with a systematic approach, facilitate the exchange of information
+between IT managers, result in better decisions, and increase confidence in
+high-quality open source software.
+
+\section{Data Sources}
+\label{sec:data}
+
+For analyzing the different HTML5 mobile app frameworks and
+provide a reliable comparison, data from different sources will be used. In
+this section I present the most important ones; other sources will be
+referenced or explained directly (for example using a footnote) when the
+corresponding fact, metric or argument is discussed.
+
+\subsubsection{Official websites}
+The official websites of the selected frameworks provide reliable information about their functionality, history, documentation and support. These sites are listed below:
+\begin{itemize}
+ \item jQuery Mobile: \url{http://jquerymobile.com/}
+ \item Sencha Touch: \url{http://www.sencha.com/products/touch}
+ \item DHTMLX Touch: \url{http://dhtmlx.com/touch/}
+\end{itemize}
+
+\subsubsection{Other data sources}
+Ohloh metrics will be taken into account. Ohloh\cite{Ohloh} is a free public
+directory of open source software and people, owned and operated by BlackDuck
+Software Inc., a consulting company specialized in gathering and providing
+information about open source software projects. Some metrics present in Ohloh
+site are provided by Ohloh specific tools and others are provided by gathering
+the information provided by Ohloh users for their own projects or the projects
+they are interested in.
+
+In addition to this, some metrics will be calculated directly inspecting the
+source code and history of the development of the different frameworks (that is, their own commit logs). For this task, FLOSSMetrics databases will be used.
+FLOSSMetrics\cite{FLOSSMetrics} stands for Free/Libre Open Source Software
+Metrics, and it is an European Commission founded project with the goal to
+(among others) publish a large scale database with information and metrics about libre software development. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Results Comparison}
 \label{chap:results}
+
+I am going to follow the ``Business Readiness Rating for Open Source
+(OpenBRR)'' whitepaper\cite{OpenBRRWhitepaper} to apply this model to the
+evaluation of the different solutions.
+
+\section{Phase 1: Quick Assessment}
+\label{sec:phase1}
+This first phase has been applied by performing a deep search of the existing HTML5 frameworks for developing mobile apps through the Internet.
+
+% justify selected frameworks
+
+%% other refs
+%http://en.wikipedia.org/wiki/Multiple_phone_web_based_application_framework
+%http://en.wikipedia.org/wiki/HTML5_in_mobile_devices
+%http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
+% http://speckyboy.com/2011/03/07/20-new-frameworks-for-web-and-mobile-app-developers/
+
+%%
+%http://speckyboy.com/2011/03/07/20-new-frameworks-for-web-and-mobile-app-developers/
+
+\section{Phase 2: Target Usage Assessment}
+\label{sec:phase2}
+This second phase consists in setting the category and metric weights according to our requirements. The canonical OpenBRR model recommends to focus in not more than seven categories, but in order to provide a more general overview, I will consider the twelve categories present in the model.
+
+If we were considering all the categories equal in importance, we should weight
+each one of them with 8,33\%. Our assessment will consider this number, in
+order to weight more than 8\% the categories considered relevant for the
+company, and less than 8\% the categories considered not so relevant for the
+company.
+
+The most important selected categories have been \textbf{functionality},
+\textbf{usability} and \textbf{community}. Each one of them have been given a
+weight of 12\%, so together they reach 36\% of the total evaluation.
+
+The OpenBRR model provides no ready-to-collect metrics for
+\textbf{functionality}, allowing the evaluator to create them in a tailored way
+according to the customer's requirements. 
+
+% add here customized metrics fpor mobile apps like portability, user-friandliness etc...
+
+\textbf{Support} and \textbf{documentation} are also desirable aspects, that
+ensure the liveness of the community of any piece of software, and also
+guarantee usability since good instructions and advices smooth out the
+difficulties of any tool. For this reason these two categories have been
+weighted with 10\%. With the same arguments we could consider
+\textbf{adoption}, but we also need to know that there are two influent factors
+in adoption: on one hand, we need time for any tool to be widely used. On the
+other hand, ``trends'' have also influence in the IT world; and certain
+companies or tools come in a particular time to the crest of the wave, but
+quickly sink into obscurity due to the dynamism of the technologies
+environments. So adoption have been scored with 9\%, still over the mean, but
+not so much.
+
+About \textbf{security}, the given weight has been 8\% as we have not defined specific requirements on this purpose, but it is a desirable feature specially for the future when new developers come to the community.
+
+\textbf{Performance} and \textbf{architecture} are two categories weighted under the mean (6\%)
+
+The less important categories for this evaluation are \textbf{quality},
+\textbf{scalability} and \textbf{professionalism}. These categories have been
+weighted with 5\%, which makes a sum of 15\% of total evaluation. 
+
+In conclusion, in table \ref{OpenBRR2} I present the categories and
+their resulting weights for our evaluation.
+
+\begin{table}[ht]
+\begin{center}
+    \begin{tabular}{ | l | c | r |}
+    \hline
+    \textbf{Rank} & \textbf{Category} & \textbf{Weight} \\ \hline
+    1 & Functionality & 12\% \\ \hline
+    2 & Usability & 12\% \\ \hline
+    3 & Quality & 5\% \\ \hline
+    4 & Security & 8\% \\ \hline
+    5 & Performance & 6\% \\ \hline
+    6 & Scalability & 5\% \\ \hline
+    7 & Architecture & 6\% \\ \hline
+    8 & Support & 10\% \\ \hline
+    9 & Documentation & 10\% \\ \hline
+    10 & Adoption & 9\% \\ \hline
+    11 & Community & 12\% \\ \hline
+    12 & Professionalism & 5\% \\ \hline
+     & \textbf{TOTAL WEIGHT} & \textbf{100\%} \\ \hline  
+    \end{tabular}
+\end{center}
+ \caption{OpenBRR Target Usage Assessment for HTML5 mobile apps frameworks}
+\label{OpenBRR2}
+\end{table}
+
+\section{Phase 3: Data collection and processing}
+\label{sec:phase3}
+For filling the differents scores assigned to each category defined previously I have used the OpenBRR baseline spreadsheet provided to the students of Master on Libre Software 2011-2012 (Universidad Rey Juan Carlos, Madrid, Spain).
+For more information about this topic you can visit the MSWL Project Evaluation Subject's Moodle site in:\\
+\url{http://docencia.etsit.urjc.es/moodle/course/view.php?id=125}. 
+
+This spreadsheet has an initial set of metrics for each OpenBRR category, allowing to ponderate each metric and providing a normalized score according to the possible values obtained in measurements.
+
+Category weights have been introduced in the sheets. Each metric within each
+category should have a weighting factor to differentiate the metric's
+importance withing that particular category. 
+
+Each metric has been measured searching the Internet and getting the needed information from official mailing lists or websites and referencing that link in the corresponding ``Raw score'' cell with a ``comment'' in the cell. When a
+reference is not provided, it means that that metric could not be found or the own tool command line help or main website announces that aspect so it is
+easy to find.
+
+For the unknown data, I have assigned the worst possible normalized score to
+the corresponding metric, so the results is not biased by unreliable
+information.
+
+\section{Phase 4: Representative Metrics and their Scoring}
+\label{sec:phase4}
+
+After collecting all the data and normalizing using the OpenBRR spreadsheet,
+scores for each category and a global score is automatically calculated.
+The resulting work can be downloaded from this URLs:
+
+\begin{itemize}
+ \item jQuery Mobile spreadsheet:
+\url{
+https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/thesis/OpenBRR_Templates/BRR_Template_jQuery.ods}
+
+ \item Sencha Touch OpenBRR spreadsheet:
+\url{
+https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/thesis/OpenBRR_Templates/BRR_Template_Sencha.ods}
+
+ \item DHTMLX Touch OpenBRR spreadsheet:
+\url{
+https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/thesis/OpenBRR_Templates/BRR_Template_DHTMLX.ods}
+
+\end{itemize}
+
+% add here score results when spreadsheets are finished!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -174,11 +395,34 @@ California, 94105, USA.\\
 \begin{thebibliography}{25}
 \bibliographystyle{alpha} 
 
-%% ref al white paper de openbrr
+\bibitem{OpenBRRWhitepaper}\textbf{OpenBRR: Business Readiness Rating for
+Open Source (White paper)}\\
+{\footnotesize\url{
+http://docencia.etsit.urjc.es/moodle/mod/resource/view.php?id=4343}}
 
-\bibitem{Android}\textbf{Android}\\
-{\footnotesize\url{http://www.android.com/}}
+\bibitem{jQuery Mobile}\textbf{jQuery Mobile}\\
+{\footnotesize\url{http://jquerymobile.com/}}
 
+\bibitem{Wikipedia jQuery Mobile}\textbf{Wikipedia jQuery Mobile}\\
+{\footnotesize\url{http://en.wikipedia.org/wiki/JQuery_Mobile}}
+
+\bibitem{Sencha Touch}\textbf{Sencha Touch}\\
+{\footnotesize\url{http://www.sencha.com/products/touch}}
+
+\bibitem{Wikipedia Sencha Touch}\textbf{Wikipedia Sencha Touch}\\
+{\footnotesize\url{http://en.wikipedia.org/wiki/Sencha_Touch}}
+
+\bibitem{DHTMLX Touch}\textbf{DHTMLX Touch}\\
+{\footnotesize\url{http://dhtmlx.com/touch/}}
+
+\bibitem{Wikipedia DHTMLX Touch}\textbf{Wikipedia DHTMLX Touch}\\
+{\footnotesize\url{http://en.wikipedia.org/wiki/Dhtmlx}}
+
+\bibitem{Ohloh}\textbf{Ohloh}\\
+{\footnotesize\url{http://www.ohloh.net/}}
+
+\bibitem{FLOSSMetrics}\textbf{FLOSSMetrics}\\
+{\footnotesize\url{http://flossmetrics.org/}}
 
 \end{thebibliography}
 \end{document}
