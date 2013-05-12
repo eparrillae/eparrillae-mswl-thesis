@@ -23,6 +23,9 @@
 \usepackage{caption3} 
 \DeclareCaptionOption{parskip}[]{} 
 \usepackage[small]{caption}
+\usepackage{latexsym}  %% For additional characters
+\usepackage{rotating}
+\usepackage[table]{xcolor}
 
 \title {Trade-Off Analysis of Open Source Web Mobile App Frameworks: The KuDo Project}
 \author{Esther Parrilla-Endrino (eparrillae@gmail.com)\\
@@ -106,7 +109,7 @@ California, 94105, USA.\\
 
 In my daily work I play the role of Technical Manager \footnote{http://www.linkedin.com/in/eparrilla} who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
 
-Beginning this year I have started working on a personal project called 'KuDo', the idea is to setup a start-up focused in the development of web-based applications for mobile devices such as smartphones, tablets etc...
+Beginning this year I have started working on a personal project called 'KuDo', the idea is to setup a start-up focused in the development of web-based games and widgets for mobile devices such as smartphones, tablets etc... that can be integrated easily into various social networking applications such as \footnote{https://www.facebook.com/} , Wikipedia\footnote{https://www.wikipedia.org/} , Twitter\footnote{https://twitter.com/}  etc...
 
 This Master Thesis is the baseline activity I have performed for the KuDo project in order to determine which technical solution could fit better for this purpose from the wide range of Web Mobile App Frameworks existing nowadays.
 
@@ -136,29 +139,95 @@ Finally I would like to specially thank my colleague Solange Molina Urrutia\foot
 \chapter{Overview and Objectives}
 \label{chap:overview}
 
-Nowadays mobile devices such as mobile phones, tablets etc... have become the preferred tools for communicating with each other, for that reason there are lots of JavaScript/AJAX libraries and frameworks specifically built for the Mobile Web. 
-These solutions enable web developers to quickly and easily create HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/}/CSS3\footnote{http://www.w3.org/TR/CSS/} based mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser.
+Nowadays mobile devices such as smartphones and tablets have become the preferred tools for communicating with each other, for that reason there are lots of technical solutions for implementing applications that can be run under those devices and that offer a clear enhancement in the end-user experience. That is the reason why the KuDo project is focused in these kind of developments, there is a clear niche of new opportunities in this software development field.
 
-The main goal of this analysis is to perform a trade-off of some of the most popular FLOSS\footnote{https://www.fsf.org/about/what-is-free-software} Web\footnote{http://www.w3.org/html/wg/drafts/html/master/} compliant frameworks used for development of mobile apps.
+Mobile Apps can be grouped in two categories:
 
+\begin{itemize}
+ \item Native Apps: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly onto the device. Users typically acquire these apps through an online store or marketplace such as The App Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
+ \item Web-based Apps: When we talk about mobile web apps we are referring to Internet-enabled apps (compliant with HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} and CSS3\footnote{http://www.w3.org/TR/CSS/} and Javascript\footnote{http://www.w3.org/standards/webdesign/script.html}  standards) that allow web developers to quickly and easily create mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser. 
+\end{itemize}
 
+For the KuDo project I had to decide which type of Mobile Apps I would develop, table below summarize using a SWOT\footnote{https://en.wikipedia.org/wiki/SWOT\_analysis} analysis the advantages and disadvantages of Native Apps:
 
-For that reason I wanted to dedicate my Master Thesis to this kind of solutions, by doing the exercise of performing a deep search in the existing FLOSS mobile app frameworks, selecting a couple of the most popular ones and then comparing their capabilities using a well-formed system like OpenBRR brings to me the opportunity to learn more about these developments and this knowledge could be useful in the future for my professional career.
+\begin{center}
+\rowcolors{1}{}{}
+    \begin{tabular}{ | p{1.7cm} | p{6cm} | p{6cm} |}
+    \hline
+    & \textbf{Strengths} & \textbf{Weaknesses} \\ \hline
+    \textbf{Internal} & 
+    Standardized software development kits (SDKs) are often provided , % Strengths
+    Can interface with the device’s native features (camera, accelerometer etc...),
+    Installed and runs as a standalone application (no web browser needed),
+    There are stores and marketplaces to help users find your app,
+    Typically perform faster than mobile web apps (being native code),
+    App store approval processes can help assure users of the quality and safety of the app
+    & Each development platform (e.g. iOS, Android) requires its own development process, %    Weaknesses
+    Each development platform has its own native programming language, 
+    Users must manually download and install app updates,
+    Are typically more expensive to develop,
+    Supporting multiple platforms requires maintaining multiple code bases,
+    Users can be on different versions making your app harder to maintain,
+    App store approval processes can delay the launch of the app\\ \hline
+    & \textbf{Opportunities} & \textbf{Threats} \\ \hline
+    \textbf{External}  
+    & Powerful apps that use all devices' potential and bring business opportunities, % Opportunities
+    Developers have the ability to charge a download price and app stores will typically handle the payment process
+    & Mobile-specific ad platforms (e.g. AdMob\footnote{https://www.google.com/ads/admob/} ) can include restrictions\footnote{http://reviews.cnet.com/8301-19512\_7-57422554-233/study-apples-udid-restrictions-cost-developers-24-revenue/}  set by the mobile device’s manufacturer, % Threats
+    Supported by less forges in the future\\ \hline
+    \end{tabular}
+\end{center}
 
-% describe mobile HTML5 apps versus native apps (Android etc...)
+Table below summarize using a SWOT analysis the advantages and disadvantages of Web-based Apps:
 
+\begin{center}
+\rowcolors{1}{}{}
+    \begin{tabular}{ | p{1.7cm} | p{6cm} | p{6cm} |}
+    \hline
+    & \textbf{Strengths} & \textbf{Weaknesses} \\ \hline
+    \textbf{Internal} & 
+    Mobile web apps use standard languages such as HTML5, CSS3 and Javascript, % Strengths
+    Accessed through a mobile device’s web browser no need to install new software ,
+    Updates are made to the web server without user intervention,
+    All users are on the same version no maintenance issues,
+    Have a common code base across all platforms,
+    Can be released in any form and any time as there is not an app store that has to approve the app,
+    If you already have a web app, you can retrofit it with a responsive web design
+    & Runs in the mobile device’s web browser and each may have its own features and quirks, % Weaknesses
+    There are no standard software development kits (SDKs), 
+    Can access a limited amount of the device’s native features and information,
+    Since there is no app store for the Mobile Web, it can be harder for users to find your app\\ \hline
+    & \textbf{Opportunities} & \textbf{Threats} \\ \hline
+    \textbf{External}  
+    & Fast development of lightweight user-friendly apps, % Opportunities
+    Mobile web apps can monetize through site advertisement and subscription fees
+    & Always needs Internet connection, % Threats
+    Charging users to use the mobile web app requires you to set up your own paywall or subscription-based system\\ \hline
+    \end{tabular}
+\end{center}
 
-% http://blogs.learnnowonline.com/blog/bid/265210/Distribution-Monetization-2-Areas-Where-HMTL5-May-Overtake-Native-Apps
+To help me decide which type of solution I shohuld take for my KuDo project I asked myself the following questions:
 
-% http://sixrevisions.com/mobile/native-app-vs-mobile-web-app-comparison/
+\begin{itemize}
+ \item Does the mobile app require the use of any special device features (i.e., camera, the camera’s flash, accelerometer, etc.)? In priciple my idea is to implement simple apps with a high level of responsiveness and the access to the device hardware components is not a must.
+ \item What is my budget? Very limited :)
+ \item Does the mobile app need to be Internet-enabled? Yes, because my idea is to link these apps with other social tools such as Facebook, Twitter etc...
+ \item Do I need to target all mobile devices or just certain devices? Portability is a key issue, the apps should be supported by most of the devices and the idea os having several codebases does not fit in KuDo project.
+ \item What programming languages do I already know? Here I have to say that my programming background expertise is more oriented to backend developments and therefore I am ready to start implementing low-level tools using Native apps but in the other side for me it is a good chance to improve my knowledge in web-developments which is a field I cannot explore in my daily professional work.
+ \item How important is speed and performance? It is important both using Native and Web-based apps.
+ \item How will this app be monetized effectively? Good question, I have some experience in setting up Paypal\footnote{https://www.paypal.com/es/webapps/mpp/home}  systems but I would need some help with this issue, again this is an interesting challenge for me.
+\end{itemize}
 
-% http://blog.pluralsight.com/2012/05/14/comparison-mobile-framework-solutions-spring-2012/
+Summarizing, due to the type of developments I am planing to do (lightweight games and widgets that can be integrated easily into various social web applications) I think the Web-based Apps solutions are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting challenge that shall improve my professional background.
+
+In this Master Thesis I am doing the exercise of performing a deep search in the existing FLOSS Web-based App frameworks for mobile devices, selecting a couple of the most popular ones and then comparing their capabilities using a well-formed system like OpenBRR.
+
+% por que he elegido FLOSS
+% ==> MSWL Licenses
+The fact that all frameworks taken under consideration in this study are Open Source solutions is a consequence of different subjects I studied during the Master Thesis and the idea that this kind of solutions bring more benefits to the development community instead of closed solutions.
 
 % why trade-off using metrics, why OpenBRR, importance of code quality
-
-% explain benefits of open source solutions
-
-The fact that all frameworks taken under consideration in this study are Open Source solutions is a consequence of different subjects I studied during the Master Thesis and the idea that this kind of solutions bring more benefits to the development community instead of closed solutions.
+% ==> MSWL Quality/Evaluation
 
 The objectives of this Master Thesis were defined and agreed with my tutors and can be summarized in the following list:
 
@@ -261,13 +330,21 @@ site are provided by Ohloh specific tools and others are provided by gathering
 the information provided by Ohloh users for their own projects or the projects
 they are interested in.
 
-% talk about forges in the master
+% ==> MSWL talk about forges in the master
 
 % https://www.ohloh.net/p/jquerymobile
 % https://www.ohloh.net/p/jQuery
 
 %% say here that other data sources we sudied in the master like FLOSSMetrics 
 %are old and have no data on this
+
+% http://www.linkedin.com/groups/iPhone-Android-iPad-Tablet-Mobile-2013391/about?report.success=wb362wlMPvFx8jmkQWKO1GQWrczx0aKOmNADs3jpDcE0yR99nWtkj9jWhP2NH-bQ-o47yERWDnxFux9o-M-u25DGB1dRkQfocDe766fOxS-NEUTGbWWTClbpDaxUkQKG-BtktFOfheZgsK5fSWZkCEsWrLVNEUXonLAktT85wZAgBvGnn_argdoXYmVg2nTf17lTk56WDnxHycrfZoVTklspUc-UERXb3AQ9r7K
+
+% http://www.linkedin.com/groups/Mobile-Software-Development-Group-69893?itemaction=mclk&anetid=69893&impid=69893-2013391&pgkey=anet_about&actpref=anet_about-gbm&trk=anet_about-gbm-group&goback=.anb_2013391_*2_*1_*1_*1_*1_*1
+
+% http://www.linkedin.com/groupsDirectory?itemaction=mclk&anetid=54723&impid=54723-2013391&pgkey=anet_about&actpref=anet_about-gbm&trk=anet_about-gbm-group&goback=.anb_2013391_*2_*1_*1_*1_*1_*1
+
+% Add LinkedIn, Google groups, Amazon, Survey Monkey and Sole's examples "Hello World" as data source
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -290,8 +367,7 @@ This first phase has been applied by performing a deep search of the existing HT
 %http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
 % http://speckyboy.com/2011/03/07/20-new-frameworks-for-web-and-mobile-app-developers/
 
-%%
-%http://speckyboy.com/2011/03/07/20-new-frameworks-for-web-and-mobile-app-developers/
+
 
 \section{Phase 2: Target Usage Assessment}
 \label{sec:phase2}
@@ -400,28 +476,35 @@ https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/th
 
 % add here score results when spreadsheets are finished!
 
-
-\section{SWOT Analysis}
-\label{sec:swot}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Conclusions}
 \label{chap:conclusions}
 
 
-\section{Lessons Learnt}
-\label{sec:lessons}
+% SWOT Analysis
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Future Work}
-\label{sec:future}
+\chapter{Future Work}
+\label{chap:future}
+
+% hablar de barcelona activa, ayudas a las start-ups etc... plan de negocios etc...
+% ==> MSWL modelos de negocio etc...
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \appendix
 \chapter{Appendix A}
 \label{app:appenda}
+
+% pantallazos sobre instalación y proyecto Sencha Touch
+
+\appendix
+\chapter{Appendix B}
+\label{app:appendb}
+
+% pantallazos sobre instalación y proyecto jQuery Mobile
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{25}
