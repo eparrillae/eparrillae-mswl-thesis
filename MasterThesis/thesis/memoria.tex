@@ -109,7 +109,7 @@ California, 94105, USA.\\
 
 In my daily work I play the role of Technical Manager \footnote{http://www.linkedin.com/in/eparrilla} who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
 
-Beginning this year I have started working on a personal project called 'KuDo', the idea is to setup a start-up focused in the development of web-based games and widgets for mobile devices such as smartphones, tablets etc... that can be integrated easily into various social networking applications such as \footnote{https://www.facebook.com/} , Wikipedia\footnote{https://www.wikipedia.org/} , Twitter\footnote{https://twitter.com/}  etc...
+Beginning this year I have started working on a personal project called 'KuDo', the idea is to setup a start-up focused in the development of web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets etc...
 
 This Master Thesis is the baseline activity I have performed for the KuDo project in order to determine which technical solution could fit better for this purpose from the wide range of Web Mobile App Frameworks existing nowadays.
 
@@ -118,7 +118,7 @@ All the work done for this Master Thesis is Open Source material licensed under 
 \url{
 https://github.com/eparrillae/eparrillae-mswl-thesis.git}
 
-% ===> GitHub project screenshot, explain why GitHub, one of the forges studied in the Master
+% ===> MSWL GitHub project screenshot, explain why GitHub, one of the forges studied in the Master
 
 Also the different activities performed in this Master Thesis have been described in my personal blog and can be found under the following tag:
 
@@ -133,7 +133,6 @@ I would like to thank my Master Thesis tutors Gregorio Robles\footnote{http://gs
 
 Finally I would like to specially thank my colleague Solange Molina Urrutia\footnote{http://www.linkedin.com/in/smolina} who has been a reference for me in this work due to her huge background expertise in Mobile App developments.  
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Overview and Objectives}
@@ -144,8 +143,8 @@ Nowadays mobile devices such as smartphones and tablets have become the preferre
 Mobile Apps can be grouped in two categories:
 
 \begin{itemize}
- \item Native Apps: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly onto the device. Users typically acquire these apps through an online store or marketplace such as The App Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
- \item Web-based Apps: When we talk about mobile web apps we are referring to Internet-enabled apps (compliant with HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} and CSS3\footnote{http://www.w3.org/TR/CSS/} and Javascript\footnote{http://www.w3.org/standards/webdesign/script.html}  standards) that allow web developers to quickly and easily create mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser. 
+ \item \textbf{Native Apps}: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly onto the device. Users typically acquire these apps through an online store or marketplace such as The Apple Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
+ \item \textbf{Web-based Apps}: When we talk about mobile web apps we are referring to Internet-enabled apps (compliant with HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} , CSS3\footnote{http://www.w3.org/TR/CSS/} and Javascript\footnote{http://www.w3.org/standards/webdesign/script.html}  standards) that allow web developers to quickly and easily create mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser. 
 \end{itemize}
 
 For the KuDo project I had to decide which type of Mobile Apps I would develop, table below summarize using a SWOT\footnote{https://en.wikipedia.org/wiki/SWOT\_analysis} analysis the advantages and disadvantages of Native Apps:
@@ -206,33 +205,33 @@ Table below summarize using a SWOT analysis the advantages and disadvantages of 
     \end{tabular}
 \end{center}
 
-To help me decide which type of solution I shohuld take for my KuDo project I asked myself the following questions:
+To help me decide which type of solution I should take for my KuDo project I asked myself the following questions:
 
 \begin{itemize}
- \item Does the mobile app require the use of any special device features (i.e., camera, the camera’s flash, accelerometer, etc.)? In priciple my idea is to implement simple apps with a high level of responsiveness and the access to the device hardware components is not a must.
- \item What is my budget? Very limited :)
- \item Does the mobile app need to be Internet-enabled? Yes, because my idea is to link these apps with other social tools such as Facebook, Twitter etc...
- \item Do I need to target all mobile devices or just certain devices? Portability is a key issue, the apps should be supported by most of the devices and the idea os having several codebases does not fit in KuDo project.
- \item What programming languages do I already know? Here I have to say that my programming background expertise is more oriented to backend developments and therefore I am ready to start implementing low-level tools using Native apps but in the other side for me it is a good chance to improve my knowledge in web-developments which is a field I cannot explore in my daily professional work.
- \item How important is speed and performance? It is important both using Native and Web-based apps.
- \item How will this app be monetized effectively? Good question, I have some experience in setting up Paypal\footnote{https://www.paypal.com/es/webapps/mpp/home}  systems but I would need some help with this issue, again this is an interesting challenge for me.
+ \item \textbf{Does the mobile app require the use of any special device features (i.e., camera, the camera’s flash, accelerometer, etc.)?} In priciple my idea is to implement simple apps with a high level of responsiveness\footnote{https://en.wikipedia.org/wiki/Responsiveness}  from the user's point of view but the access to the device hardware components is not a must.
+ \item \textbf{What is my budget?} Very limited :)
+ \item \textbf{Does the mobile app need to be Internet-enabled?} This is not a must for the first applications that I plan to develop in the context of KuDo project but for sure in future versions it would be interesting to be able to link the apps with external educational resources such as Wikipedia, museums, libraries etc...
+ \item \textbf{Do I need to target all mobile devices or just certain devices?} Portability is a key issue, the apps should be supported by most of the devices and the idea of having several codebases does not fit in KuDo project.
+ \item \textbf{What programming languages do I already know?} Here I have to say that my programming background expertise is more oriented to backend developments and therefore I am ready to start implementing low-level tools using Native apps but in the other side for me it is a good chance to improve my knowledge in web-developments which is a field I cannot explore in my daily professional work.
+ \item \textbf{How important is speed and performance?} It is important both using Native and Web-based apps.
+ \item \textbf{How will this app be monetized effectively?} I have some experience in setting up Paypal\footnote{https://www.paypal.com/es/webapps/mpp/home}  systems but I would need some help with this issue, again this is an interesting challenge for me.
 \end{itemize}
 
-Summarizing, due to the type of developments I am planing to do (lightweight games and widgets that can be integrated easily into various social web applications) I think the Web-based Apps solutions are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting challenge that shall improve my professional background.
+Summarizing, due to the type of developments I am planing to do I think the Web-based Apps solutions are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting challenge that shall improve my professional background.
 
-In this Master Thesis I am doing the exercise of performing a deep search in the existing FLOSS Web-based App frameworks for mobile devices, selecting a couple of the most popular ones and then comparing their capabilities using a well-formed system like OpenBRR.
+In this Master Thesis I am doing the exercise of performing a deep search in the existing FLOSS Web-based App frameworks for mobile devices, selecting a couple of the most popular ones and then comparing their capabilities using a well-formed quality system like OpenBRR.
+
+% why trade-off using metrics, why OpenBRR, importance of code quality
+% ==> MSWL Quality/Evaluation
 
 % por que he elegido FLOSS
 % ==> MSWL Licenses
 The fact that all frameworks taken under consideration in this study are Open Source solutions is a consequence of different subjects I studied during the Master Thesis and the idea that this kind of solutions bring more benefits to the development community instead of closed solutions.
 
-% why trade-off using metrics, why OpenBRR, importance of code quality
-% ==> MSWL Quality/Evaluation
-
 The objectives of this Master Thesis were defined and agreed with my tutors and can be summarized in the following list:
 
 \begin{itemize}
-\item Select a couple of representative Open Source web-based frameworks for developing mobile apps from the existing solutions currently available in the market.
+\item Select a couple of representative Open Source web-based frameworks for developing Mobile Apps from the existing solutions currently available in the market.
 \item Set a checklist of points to be analyzed for each solution in the form of well-defined metrics that can be properly measured.
 \item Analyze each solution using the OpenBRR methodology, setting different weights and scores for each category according to this model. Spreadsheets shall be used for automating this process.
 \item Summarize pros and contras of each solution.
@@ -242,16 +241,8 @@ The objectives of this Master Thesis were defined and agreed with my tutors and 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Selected Frameworks}
-\label{chap:tech}
+\label{chap:overview}
 
-The following frameworks have been selected among the most popular existing ones:
-
-\begin{itemize}
- \item jQuery Mobile: \url{http://jquerymobile.com/}
- \item Sencha Touch: \url{http://www.sencha.com/products/touch}
-\end{itemize}
-
-% explain that these framworks are currently the most popular and are 2hosted" withoin other bigger projects 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -367,7 +358,14 @@ This first phase has been applied by performing a deep search of the existing HT
 %http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
 % http://speckyboy.com/2011/03/07/20-new-frameworks-for-web-and-mobile-app-developers/
 
+The following frameworks have been selected among the most popular existing ones:
 
+\begin{itemize}
+ \item jQuery Mobile: \url{http://jquerymobile.com/}
+ \item Sencha Touch: \url{http://www.sencha.com/products/touch}
+\end{itemize}
+
+% explain that these frameworks are currently the most popular and are 2hosted" withoin other bigger projects 
 
 \section{Phase 2: Target Usage Assessment}
 \label{sec:phase2}
