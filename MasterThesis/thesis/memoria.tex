@@ -246,6 +246,7 @@ The objectives of this Master Thesis were defined and agreed with my tutors and 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \chapter{OpenBRR Analysis}
 \label{chap:openbrr}
 
@@ -299,47 +300,44 @@ high-quality open source software.
 \section{Data Sources}
 \label{sec:data}
 
-For analyzing the different HTML5 mobile app frameworks and
-provide a reliable comparison, data from different sources will be used. In
+For analyzing the different web-based Mobile App frameworks and
+provide a reliable comparison, data from different primary sources will be used. In
 this section I present the most important ones; other sources will be
 referenced or explained directly (for example using a footnote) when the
 corresponding fact, metric or argument is discussed.
 
-\subsubsection{Official websites}
-The official websites of the selected frameworks provide reliable information about their functionality, history, documentation and support. These sites are listed below:
+The starting point for getting data on the selected solutions are the official websites of jQuery Mobile\cite{jquery} and Sencha Touch\cite{sencha} , they provide reliable information about their functionality, history, documentation and support. 
+
+One of the data sources we studied in the MSWL was Ohloh\cite{Ohloh} which is a free public
+directory of open source software and people, owned and operated by BlackDuck Software Inc., a consulting company specialized in gathering and providing information about open source software projects. Some metrics present in Ohloh site are provided by Ohloh specific tools and others are provided by gathering the information provided by Ohloh users for their own projects or the projects they are interested in.
+
+Both jQuery Mobile and Sencha Touch are sub-projects of other parent projects (jQuery and Sencha), in Ohloh we can find information on both the parent and child projects:
+
 \begin{itemize}
- \item jQuery Mobile: \url{http://jquerymobile.com/}
- \item Sencha Touch: \url{http://www.sencha.com/products/touch}
+ \item For jQuery Mobile there is a dedicated page in Ohloh\cite{ojquery} that provides very valuable information about the project for our trade-off analysis. Also the parent project jQuery\cite{ojqueryparent} and other related extensions have their own pages in Ohloh data source.
+ \item For Sencha Touch the situation is not the same, even though we can find an entry in Ohloh for the parent Sencha project\cite{osencha} the page has no activity since a long time, therefore unfortunately we cannot take Ohloh as data source for finding information in the case of Sencha Touch and we shall have to use other sources.
 \end{itemize}
 
-\subsubsection{Other data sources}
-Ohloh metrics will be taken into account. Ohloh\cite{Ohloh} is a free public
-directory of open source software and people, owned and operated by BlackDuck
-Software Inc., a consulting company specialized in gathering and providing
-information about open source software projects. Some metrics present in Ohloh
-site are provided by Ohloh specific tools and others are provided by gathering
-the information provided by Ohloh users for their own projects or the projects
-they are interested in.
+In the MSWL we studied other data sources like FLOSSMetrics\cite{FLOSSMetrics} , FLOSSmole\cite{FLOSSmole} and FLOSShub\cite{FLOSShub} which provide centralized access to data analysis (charts, tables and other quantitative information) of free/libre/open source projects hosted in forges such as Sourceforge\footnote{https://sourceforge.net/} , GForge\footnote{http://gforge.org/gf/}  etc... Also we saw the FLOSSpapers project\cite{FLOSSpapers} allows to perform queries on papers published on these purposes.
 
-% ==> MSWL talk about forges in the master
+Unfortunately because the technologies we are studying in this thesis are quite new there is no data for both jQuery Mobile and Sencha Touch project in none of the data sources cited above so I had to look for other sources of information.
 
-% https://www.ohloh.net/p/jquerymobile
-% https://www.ohloh.net/p/jQuery
+One of the most interesting data sources nowadays is LinkedIn\footnote{https://www.linkedin.com/}  a social networking website for exchanging profesisonal information, there are lots of groups devoted to Mobile Apps technologies, I have performed a seach in several of those groups looking for information on jQuery Mobile and Sencha, specially in the "iPhone, Android, iPad, Tablet \& Mobile Application Development"\cite{linkedin1},  the "Mobile Software Development Group"\cite{linkedin2} and the "Developers - HTML5, Android, iOS, Windows, Java, BlackBerry,..."\cite{linkedin3} groups which are very active. 
 
-%% say here that other data sources we sudied in the master like FLOSSMetrics 
-%are old and have no data on this
+LinkedIn allows users to start discussions and polls in the groups they are subscribed to... 
+% meter aqui el link a la pregunta en LinkedIn! 
 
-% http://www.linkedin.com/groups/iPhone-Android-iPad-Tablet-Mobile-2013391/about?report.success=wb362wlMPvFx8jmkQWKO1GQWrczx0aKOmNADs3jpDcE0yR99nWtkj9jWhP2NH-bQ-o47yERWDnxFux9o-M-u25DGB1dRkQfocDe766fOxS-NEUTGbWWTClbpDaxUkQKG-BtktFOfheZgsK5fSWZkCEsWrLVNEUXonLAktT85wZAgBvGnn_argdoXYmVg2nTf17lTk56WDnxHycrfZoVTklspUc-UERXb3AQ9r7K
+Also Google discussion groups\cite{google}  which contain a searchable archive of more than 700 million Usenet postings from a period of more than 20 years is a valuable source of information.
 
-% http://www.linkedin.com/groups/Mobile-Software-Development-Group-69893?itemaction=mclk&anetid=69893&impid=69893-2013391&pgkey=anet_about&actpref=anet_about-gbm&trk=anet_about-gbm-group&goback=.anb_2013391_*2_*1_*1_*1_*1_*1
+% añadir encuesta Survey Monkey!
 
-% http://www.linkedin.com/groupsDirectory?itemaction=mclk&anetid=54723&impid=54723-2013391&pgkey=anet_about&actpref=anet_about-gbm&trk=anet_about-gbm-group&goback=.anb_2013391_*2_*1_*1_*1_*1_*1
+Regarding documentation available for each project, Amazon\cite{amazon}  is the reference data source I have used.
 
-% Add LinkedIn, Google groups, Amazon, Survey Monkey and Sole's examples "Hello World" as data source
+% any other source??
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Results Comparison}
+\chapter{Trade-Off Results}
 \label{chap:results}
 
 I am going to follow the ``Business Readiness Rating for Open Source
@@ -437,7 +435,9 @@ their resulting weights for our evaluation.
 
 \section{Phase 3: Data collection and processing}
 \label{sec:phase3}
-For filling the differents scores assigned to each category defined previously I have used the OpenBRR baseline spreadsheet provided to the students of Master on Libre Software 2011-2012 (Universidad Rey Juan Carlos, Madrid, Spain).
+For filling the differents scores assigned to each category defined previously I have used the OpenBRR baseline spreadsheet provided to the students of Master on Libre Software 2011-2012 located at:\\
+\url{http://docencia.etsit.urjc.es/moodle/mod/resource/view.php?id=4350}
+
 For more information about this topic you can visit the MSWL Project Evaluation Subject's Moodle site in:\\
 \url{http://docencia.etsit.urjc.es/moodle/course/view.php?id=125}. 
 
@@ -513,29 +513,50 @@ Open Source (White paper)}\\
 {\footnotesize\url{
 http://docencia.etsit.urjc.es/moodle/mod/resource/view.php?id=4343}}
 
-\bibitem{jQuery Mobile}\textbf{jQuery Mobile}\\
+\bibitem{jquery}\textbf{jQuery Mobile}\\
 {\footnotesize\url{http://jquerymobile.com/}}
 
-\bibitem{Wikipedia jQuery Mobile}\textbf{Wikipedia jQuery Mobile}\\
-{\footnotesize\url{http://en.wikipedia.org/wiki/JQuery_Mobile}}
-
-\bibitem{Sencha Touch}\textbf{Sencha Touch}\\
+\bibitem{sencha}\textbf{Sencha Touch}\\
 {\footnotesize\url{http://www.sencha.com/products/touch}}
-
-\bibitem{Wikipedia Sencha Touch}\textbf{Wikipedia Sencha Touch}\\
-{\footnotesize\url{http://en.wikipedia.org/wiki/Sencha_Touch}}
 
 \bibitem{Ohloh}\textbf{Ohloh}\\
 {\footnotesize\url{http://www.ohloh.net/}}
 
+\bibitem{ojquery}\textbf{Ohloh jQuery Mobile}\\
+{\footnotesize\url{https://www.ohloh.net/p/jquerymobile}}
+
+\bibitem{ojqueryparent}\textbf{Ohloh jQuery}\\
+{\footnotesize\url{https://www.ohloh.net/p/jQuery}}
+
+\bibitem{osencha}\textbf{Ohloh Sencha}\\
+{\footnotesize\url{https://www.ohloh.net/p/sencha}}
+
 \bibitem{FLOSSMetrics}\textbf{FLOSSMetrics}\\
 {\footnotesize\url{http://flossmetrics.org/}}
 
-%http://en.wikipedia.org/wiki/Multiple_phone_web_based_application_framework
-%http://en.wikipedia.org/wiki/HTML5_in_mobile_devices
-%http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
-%
-%http://speckyboy.com/2011/03/07/20-new-frameworks-for-web-and-mobile-app-developers/
+\bibitem{FLOSSmole}\textbf{FLOSSmole}\\
+{\footnotesize\url{http://flossmole.org/}}
+
+\bibitem{FLOSShub}\textbf{FLOSShub}\\
+{\footnotesize\url{http://flosshub.org/}}
+
+\bibitem{FLOSSpapers}\textbf{FLOSSpapers}\\
+{\footnotesize\url{http://flosshub.org/biblio}}
+
+\bibitem{linkedin1}\textbf{LinkedIn1}\\
+{\footnotesize\url{http://www.linkedin.com/groups/iPhone-Android-iPad-Tablet-Mobile-2013391}}
+
+\bibitem{linkedin2}\textbf{LinkedIn2}\\
+{\footnotesize\url{http://www.linkedin.com/groups/Mobile-Software-Development-Group-69893}}
+
+\bibitem{linkedin3}\textbf{LinkedIn3}\\
+{\footnotesize\url{http://www.linkedin.com/groups?home=&gid=54723&trk=anet_ug_hm}}
+
+%\bibitem{google}\textbf{google}\\
+%{\footnotesize\url{https://groups.google.com‎}}
+
+%\bibitem{amazon}\textbf{amazon}\\
+%{\footnotesize\url{http://www.amazon.com/‎}} 
 
 \end{thebibliography}
 \end{document}
