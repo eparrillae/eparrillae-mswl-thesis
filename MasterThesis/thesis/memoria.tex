@@ -140,10 +140,10 @@ Finally I would like to specially thank my colleague Solange Molina Urrutia\foot
 
 Nowadays mobile devices such as smartphones and tablets have become the preferred tools for communicating with each other, for that reason there are lots of technical solutions for implementing applications that can be run under those devices and that offer a clear enhancement in the end-user experience. That is the reason why the KuDo project is focused in these kind of developments, there is a clear niche of new opportunities in this software development field.
 
-Mobile Apps can be grouped in two categories:
+Mobile Apps can be grouped in two categories\footnote{https://wiki.developerforce.com/page/Native,\_HTML5,\_or\_Hybrid:\_Understanding\_Your\_Mobile\_Application\_Development\_Options} :
 
 \begin{itemize}
- \item \textbf{Native Apps}: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly onto the device. Users typically acquire these apps through an online store or marketplace such as The Apple Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
+ \item \textbf{Native/Hybrid Apps}: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly onto the device. Users typically acquire these apps through an online store or marketplace such as The Apple Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
  \item \textbf{Web-based Apps}: When we talk about mobile web apps we are referring to Internet-enabled apps (compliant with HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} , CSS3\footnote{http://www.w3.org/TR/CSS/} and Javascript\footnote{http://www.w3.org/standards/webdesign/script.html}  standards) that allow web developers to quickly and easily create mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser. 
 \end{itemize}
 
@@ -330,30 +330,135 @@ Also for having a better idea on measuring some of the metrics related to the fu
 \chapter{Trade-Off Results}
 \label{chap:results}
 
-I am going to follow the ``Business Readiness Rating for Open Source
-(OpenBRR)'' whitepaper\cite{OpenBRRWhitepaper} to apply this model to the
-evaluation of the different solutions.
+As stated before, I am going to follow the "Business Readiness Rating for Open Source
+(OpenBRR)" whitepaper\cite{OpenBRRWhitepaper} to apply this model to the evaluation of the different solutions I have selected: jQuery Mobile and Sencha Touch.
 
 \section{Phase 1: Quick Assessment}
 \label{sec:phase1}
-This first phase has been applied by performing a deep search of the existing HTML5 frameworks for developing mobile apps through the Internet.
+This first phase is focused in setting the number of categories used and the different metrics that shall be evaluated per category. The canonical OpenBRR model recommends to focus in not more than seven categories, but in order to provide a more general overview, I have considered the twelve categories present in the model.
 
-% justify selected frameworks
+Regarding the metrics, I have reviewed the list of metrics provided by the canonical OpenBRR model template, if these metrics fit well with the type of tools I have to analyze (Mobile Web App) I have left them as they are but in some cases I have substituted the default metrics with new ones that measure better the quality of the products.
 
-%% other refs
-%http://en.wikipedia.org/wiki/Multiple_phone_web_based_application_framework
-%http://en.wikipedia.org/wiki/HTML5_in_mobile_devices
-%http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
-% http://speckyboy.com/2011/03/07/20-new-frameworks-for-web-and-mobile-app-developers/
+\subsection{Functionality Category metrics definition}
+\label{Functionality Category metrics definition}
 
-The following frameworks have been selected among the most popular existing ones:
+The most important category within this study is the "Functionality" category, here I have defined a set of very specific criteria to evaluate precisely the selected frameworks, to be able to define a complete subset of metrics I have used two different sources:
 
 \begin{itemize}
- \item jQuery Mobile: \url{http://jquerymobile.com/}
- \item Sencha Touch: \url{http://www.sencha.com/products/touch}
+ \item The experience analyzing the available solutions in the market for developing Mobile Web Apps done in previous section "Selected Frameworks".
+ \item Wikipedia comparison tables between web-based Mobile App frameworks\cite{wikipedia1}  and HTML5/CSS3/Javascript frameworks\cite{wikipedia2}.
 \end{itemize}
 
-% explain that these frameworks are currently the most popular and are 2hosted" withoin other bigger projects 
+\subsection{OpenBRR improvements with new metrics}
+\label{OpenBRR improvements with new metrics}
+
+The following new metrics have been added to this study:
+
+\subsubsection{Multiplatform support}
+\label{Multiplatform support}
+
+I have added this metric in the \textbf{Usability} category, one of the key points of the development of KuDo projects is that the applications can be run in the most popular mobile platforms used nowadays, therefore, it is quite important to ensure that the salected framework runs well in different web browsers and mobile devices containing those web browsers.
+
+The score assigned to this metric will be:
+\begin{itemize}
+ \item Good Support: 5
+ \item Regular Support: 3
+ \item Poor Support: 1
+\end{itemize}
+
+\subsubsection{Are there any repositories of 3rd party UI Plug-ins}
+\label{Are there any repositories of 3rd party UI Plug-ins}
+
+I have added this metric in the \textbf{Architecture} category, for any kind of User Interface development it is quite important to have available a good toolkit of UI widgets coming by default with the selected solution, but also if there are external repositories containing widgets implemented by 3rd party developers this helps a lot in extending the capabilities provided by the applications.
+
+The score assigned to this metric will be:
+\begin{itemize}
+ \item more than 10 repositories available: 5
+ \item 6 to 10 repositories available: 4
+ \item 2 to 5 repositories available: 3
+ \item 1 repositories available: 2
+ \item 0 repositories available: 1
+\end{itemize}
+
+\subsubsection{Backend Services Support}
+\label{Backend Services Support}
+
+I have added this metric in the \textbf{Architecture} category, even though the idea of the KuDo project is to develop lightweight apps focused in the presentation layer, maybe in some cases it is going necessary to connect these applications with other backend components such as databases, web services etc... this metric tries to measure this aspect.
+
+The score assigned to this metric will be:
+\begin{itemize}
+ \item Yes, extensive: 5
+ \item Yes: 3
+ \item No: 1
+\end{itemize}
+
+\subsubsection{Programming Languages}
+\label{Programming Languages}
+
+I have added this metric in the \textbf{Architecture} category, as we saw during the "Communities" subject of the MSWL for a given development the support of more languages in the core source code of the framework means more flexiblity and also more people may get involved in the project, if the project is completely built based in just one programming language is possible that a developer who does not know about the language used on it cannot collaborate.
+
+But also is important the amount of code used in a concrete programming language, it would not be good if we say that a FLOSS project uses three different programming languages when one of them just has a few lines of code.
+
+The score assigned to this metric will be:
+\begin{itemize}
+ \item 80\% or more of SLOC in three or more languages: 5
+ \item 80\% or more of SLOC in two languages: 3
+ \item 80\% or more of SLOC in one language: 1
+\end{itemize}
+
+\subsubsection{Framework web site quality}
+\label{Framework web site quality}
+
+I have added this metric in the \textbf{Documentation} category, a good web site should provide a centralized point for getting information on the project's objectives, license, access to source code, forums, mailing lists etc...
+
+Also the information should be provided for the various end-users roles: 
+\begin{itemize}
+ \item users with no experience using Mobile App frameworks
+ \item users with experience using Mobile App frameworks but with no experience using this particular framework
+ \item developers of the framework
+ \item project administrators
+\end{itemize}
+
+The score assigned to this metric will be:
+\begin{itemize}
+ \item Superb web site: 5
+ \item Acceptable web site: 3
+ \item Poor web site: 1
+\end{itemize}
+
+\subsubsection{Longevity}
+\label{Longevity}
+A new metric is introduced in the \textbf{Community} category. I think that the longevity of a given project must be measured combining two different criteria, in one hand the project's age, but also it has to be analyzed if during the whole project lifecycle there has been development activity, a very old project with just a few activity is really useless for the KuDo project purposes.
+
+Taking into account the previous assertions the normalized scores to assign to this metric will be:
+\begin{itemize}
+ \item Young project (more than 1 year old) and increasing lines of code production : 1
+  \item Medium project (more than 5 years old) and increasing lines of code production : 3
+ \item Long project (more than 10 years old) and increasing lines of code production: 5
+\end{itemize}
+
+\subsubsection{Cloud Support}
+\label{Cloud Support}
+A new metric is introduced in the \textbf{Community} category. This metric is related with the feature to provide backend-as-a-service capabilities that allows developers to access a set of APIs that helps them to build, run and test their applications in a cloud environment.
+
+The score assigned to this metric will be:
+\begin{itemize}
+ \item Full support: 5
+  \item Partial Support : 3
+ \item No Support: 1
+\end{itemize}
+
+\subsubsection{License}
+\label{License}
+
+A new metric is introduced in the \textbf{Professionalism} category. For the KuDo project it is a must that the Mobile App solutions is licensed under an OSI-approved\footnote{http://www.opensource.org/licenses} FLOSS license. Also if the license allows to mix the product with proprietary code is an enhancement.
+
+Taking into account the previous assertions the normalized scores to assign to this metric will be:
+\begin{itemize}
+ \item Open Source but Non-OSI-Approved license: 1
+ \item OSI-Approved and "GPL-like" license: 3
+ \item OSI-Approved and "weak copyleft" license: 5
+\end{itemize}
 
 \section{Phase 2: Target Usage Assessment}
 \label{sec:phase2}
@@ -544,6 +649,13 @@ http://docencia.etsit.urjc.es/moodle/mod/resource/view.php?id=4343}}
 
 \bibitem{linkedin3}\textbf{LinkedIn3}\\
 {\footnotesize\url{http://www.linkedin.com/groups?home=&gid=54723&trk=anet_ug_hm}}
+
+\bibitem{wikipedia1}\textbf{wikipedia1}\\
+{\footnotesize\url{http://en.wikipedia.org/wiki/Multiple_phone_web_based_application_framework}}
+
+\bibitem{wikipedia2}\textbf{wikipedia2}\\
+{\footnotesize\url{http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks}}
+
 
 
 \end{thebibliography}
