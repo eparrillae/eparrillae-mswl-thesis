@@ -462,44 +462,26 @@ Taking into account the previous assertions the normalized scores to assign to t
 
 \section{Phase 2: Target Usage Assessment}
 \label{sec:phase2}
-This second phase consists in setting the category and metric weights according to our requirements. The canonical OpenBRR model recommends to focus in not more than seven categories, but in order to provide a more general overview, I will consider the twelve categories present in the model.
+This second phase consists in setting the category and metric weights according to the KuDo project requirements. The canonical OpenBRR model recommends to focus in not more than seven categories, but as I said before, in order to provide a more general overview I will consider the twelve categories present in the model.
 
-If we were considering all the categories equal in importance, we should weight
-each one of them with 8,33\%. Our assessment will consider this number, in
-order to weight more than 8\% the categories considered relevant for the
-company, and less than 8\% the categories considered not so relevant for the
-company.
+If we were considering all the categories equal in importance, we should weight each one of them with 8,33\%. Our assessment will consider this number, in order to weight more than 8\% the categories considered relevant for the KuDo project needs, and less than 8\% the categories considered not so relevant.
 
-The most important selected categories have been \textbf{functionality},
-\textbf{usability} and \textbf{community}. Each one of them have been given a
-weight of 12\%, so together they reach 36\% of the total evaluation.
+The most important selected categories have been \textbf{Functionality} and \textbf{Usability}. Each one of them have been given a weight of 12\%, so together they reach 36\% of the total evaluation.
 
-The OpenBRR model provides no ready-to-collect metrics for
-\textbf{functionality}, allowing the evaluator to create them in a tailored way
-according to the customer's requirements. 
+The OpenBRR model provides no ready-to-collect metrics for \textbf{Functionality}, allowing the evaluator to create them in a tailored way according to the customer's requirements, in previous section "Functionality Category metrics definition" I have explained the criteria followed to define the list of metrics.
 
-% add here customized metrics fpor mobile apps like portability, user-friandliness etc...
+\textbf{Support}, \textbf{Documentation} and \textbf{Community} are also desirable aspects, that ensure the liveness of the community of any piece of software, and also guarantee usability since good instructions and advices smooth out the
+difficulties of any tool. For this reason these categories have been
+weighted with 10\%. 
 
-\textbf{Support} and \textbf{documentation} are also desirable aspects, that
-ensure the liveness of the community of any piece of software, and also
-guarantee usability since good instructions and advices smooth out the
-difficulties of any tool. For this reason these two categories have been
-weighted with 10\%. With the same arguments we could consider
-\textbf{adoption}, but we also need to know that there are two influent factors
-in adoption: on one hand, we need time for any tool to be widely used. On the
-other hand, ``trends'' have also influence in the IT world; and certain
-companies or tools come in a particular time to the crest of the wave, but
-quickly sink into obscurity due to the dynamism of the technologies
-environments. So adoption have been scored with 9\%, still over the mean, but
-not so much.
+With the same arguments I have evaluated \textbf{Adoption}, but we also need to know that there are two influent factors in adoption: on one hand, we need time for any tool to be widely used. On the other hand, "trends" have also influence in the IT world; and certain
+companies or tools come in a particular time to the crest of the wave, but quickly sink into obscurity due to the dynamism of the technologies environments. 
 
-About \textbf{security}, the given weight has been 8\% as we have not defined specific requirements on this purpose, but it is a desirable feature specially for the future when new developers come to the community.
+\textbf{Architecture}  and \textbf{Scalability} are also key aspects of this trade-off, as I are looking for a framework that serves as a baseline for the developments done in the context of the KuDo project, this framework should provide an architectural design modular and flexible enough to allow the integration of new components to the "core" in an easy way.
 
-\textbf{Performance} and \textbf{architecture} are two categories weighted under the mean (6\%)
+About \textbf{Quality}, \textbf{Security} and \textbf{Performance} the given weight has been 5\% as I have not defined yet strong requirements on this purpose, but they desirable features specially for the future of the project when the mobile apps to be developed become more and more complex.
 
-The less important categories for this evaluation are \textbf{quality},
-\textbf{scalability} and \textbf{professionalism}. These categories have been
-weighted with 5\%, which makes a sum of 15\% of total evaluation. 
+Finally \textbf{Professionalism} has been given a weight of 5\%, it is important that the selected framework is supported by a robust community and in the particular case of jQuery Mobile and Sencha Touch both are sub-projects that were created from a bigger parent project (jQuery and Sencha) which ensures its stability. 
 
 In conclusion, in table \ref{OpenBRR2} I present the categories and
 their resulting weights for our evaluation.
@@ -512,19 +494,19 @@ their resulting weights for our evaluation.
     1 & Functionality & 12\% \\ \hline
     2 & Usability & 12\% \\ \hline
     3 & Quality & 5\% \\ \hline
-    4 & Security & 8\% \\ \hline
-    5 & Performance & 6\% \\ \hline
-    6 & Scalability & 5\% \\ \hline
-    7 & Architecture & 6\% \\ \hline
+    4 & Security & 5\% \\ \hline
+    5 & Performance & 5\% \\ \hline
+    6 & Scalability & 8\% \\ \hline
+    7 & Architecture & 8\% \\ \hline
     8 & Support & 10\% \\ \hline
     9 & Documentation & 10\% \\ \hline
-    10 & Adoption & 9\% \\ \hline
-    11 & Community & 12\% \\ \hline
+    10 & Adoption & 10\% \\ \hline
+    11 & Community & 10\% \\ \hline
     12 & Professionalism & 5\% \\ \hline
      & \textbf{TOTAL WEIGHT} & \textbf{100\%} \\ \hline  
     \end{tabular}
 \end{center}
- \caption{OpenBRR Target Usage Assessment for HTML5 mobile apps frameworks}
+ \caption{OpenBRR Target Usage Assessment for web-based Mobile App Frameworks}
 \label{OpenBRR2}
 \end{table}
 
@@ -550,7 +532,7 @@ For the unknown data, I have assigned the worst possible normalized score to
 the corresponding metric, so the results is not biased by unreliable
 information.
 
-\section{Phase 4: Representative Metrics and their Scoring}
+\section{Phase 4: Data Translation}
 \label{sec:phase4}
 
 After collecting all the data and normalizing using the OpenBRR spreadsheet,
