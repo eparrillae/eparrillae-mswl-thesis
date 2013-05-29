@@ -707,30 +707,21 @@ In terms of programming languages figure below shows the results of executing sl
 
 We see that most of the code is done using PHP and XML but also there is some code in Ruby and shell scripts, which means that for implementing Mobile Apps using this framework requires knowledge in those languages, this is good for me as I have used them extensively in the past.
 
-In the \textbf{Support} category we can clearly see that the jQuery Mobile community is very active and the mailing lists work very well but if we are looking for any kind of professional support that capability is missing within the project, for that reason we conclude that for using jQuery Mobile as baseline for KuDo developments it is necessary to have some background in web-based software development.
+In the \textbf{Support} category we can clearly see that the mailing lists work very well and also it is possible to have professional support\cite{sencha support}  which is a missing capability in jQuery Mobile, so for this category Sencha is better than jQuery.
 
 Regarding \textbf{Documentation} category I have to say that the project is really well-documented, there are lots of books about jQuery Mobile and the web site contains all necessary resources for both developers without experience and advanced ones, in this category all scores are high. This applies also for \textbf{Adoption} category, there are many real-world examples of Mobile Apps developed using jQuery Mobile framework.
 
-In the \textbf{Community} category we see that average volume of messages in the mailing lists in the last six months is high, also the number of commits in the last month is good but the number of contributors in this period is still low as shown in figure below:
+In the \textbf{Community} category we see that average volume of messages in the mailing lists in the last six months is high, unfortunately the number of commits in the last month and the number of contributors in this period cannot be checked, as we said before, there is no public access to Sencha Touch code repository. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm, keepaspectratio]{img/jqueryohloh.png}
-    \caption{\textit{jQuery Mobile Monthly Statistics in Ohloh}}
-    \label{figure:jquerymonthly}
- \end{figure}
- 
-The fact that the number od contributors to the 'core' is still low can be a problem to guarantee the sustainability of the project in the future and must be taken into account.
+In terms of Longevity, Sencha Touch is considered still a young project but taking into account that it is supported by its parent project Sencha\footnote{http://sencha.com/}  managed by a private company\footnote{http://www.sencha.com/company/}  which has several private partners I think the future of the project is ensured.
 
-In terms of Longevity, jQuery is considered still a young project but taking into account that it is supported by its parent project jQuery\footnote{http://jquery.com/}  managed by the jQuery Foundation\cite{jQuery Foundation}  which is very active I think the future of the project is ensured.
+In the \textbf{Professionalism} category we can see that there is a dedicated conference for Sencha users\cite{sencha Conferences} that promotes the framework among its users  (next Sencha Conference to be held in June 2013\footnote{http://senchacon.com/rockstar-promotion/}).
 
-In the \textbf{Professionalism} category the role of the jQuery Foundation is crucial for organizing conferences and workshops that promote the framework among its users community (next jQuery Conference to be held in June 2013\footnote{http://events.jquery.org/2013/portland/}).
+A big difference is that there is no way to contribute to Sencha Touch in the same way it is done in jQuery, i.e., contacting directly with its community and join them, I consider this another important pitfall, the only information I have found related to developers is in the support pages, see\cite{sencha devs}.  
 
-Also the community around jQuery Mobile is very welcome to receive new contributors\footnote{http://forum.jquery.com/topic/how-can-i-contribute-to-jquery-mobile-core-development} which makes easier the process of participating in the project which is something I would really like to do.
+Finally jQuery Mobile is licensed using a dual licensing schema\footnote{http://www.oss-watch.ac.uk/resources/duallicence2}  with a commercial license and an Open Source GPLv3 license \footnote{http://gplv3.fsf.org/}. For the KuDo project I was thinking about using a weak-copyleft license like MIT, BSD, APL, EPL etc... this is because my idea is to integrate several tools within my own development and in some cases GPL does not allow me to do so. 
 
-Finally jQuery Mobile is licensed under a MIT license\footnote{http://opensource.org/licenses/MIT} which is perfect for KuDo project purposes, my idea is to integrate in jQuery Mobile other open source plugins and also implement on top of the framework my own developments.
-
-Table below summarize using a SWOT analysis the advantages and disadvantages of jQuery Mobile after the OpenBRR analysis:
+Table below summarize using a SWOT analysis the advantages and disadvantages of Sencha Touch after the OpenBRR analysis:
 
 \begin{center}
 \rowcolors{1}{}{}
@@ -740,21 +731,23 @@ Table below summarize using a SWOT analysis the advantages and disadvantages of 
     \textbf{Internal} & 
     Easy of install and use, % Strengths
     Wide range of 3rd party plugins/extensions,
-    Weak-copyleft MIT license,
-    Strong Open Source community behind,
+    Strong company and private partners behind,
     Pretty good documentation, books, articles etc...,
-    Code repository available in Github contributors can join to the core team
-    & No Performance Testing Reports and Benchmarks available, % Weaknesses
+    Performance Testing Reports and Benchmarks available,
+    Support for some advanced features video/audio/stencils/backend services,
+    Design patterns by default,
+    Professional support available,
+    & License schema, % Weaknesses
     Access to native features through PhoneGap, 
-    No support for some advanced features video/audio/stencils/backend services,
-    No design patterns by default,
-    No professional support\\ \hline
+    No Open Source community behind it is not possible to become a volunteer contributor,
+    Software quality cannot be measured (access to code repo is not available),
+    No visibility of improvements done and future roadmap\\ \hline
     & \textbf{Opportunities} & \textbf{Threats} \\ \hline
     \textbf{External}  
-    & Fast development of lightweight user-friendly responsive apps, % Opportunities
-    Good change to join an active community of developers
-    & Huge background in Javascript/HTML needed, % Threats
-    Low number of contributors that could compromise the future of the project\\ \hline
+    & Professional support, % Opportunities
+    Better integration with other external tools
+    & License schema, % Threats
+    No community, no open sopurce development\\ \hline
     \end{tabular}
 \end{center}
 
@@ -763,6 +756,8 @@ Table below summarize using a SWOT analysis the advantages and disadvantages of 
 
 \chapter{Conclusions}
 \label{chap:conclusions}
+
+Clearly Sencha Touch bussiness model is quite different from jQuery Mobile, in the case of Sencha there is a clear objective of monetization of their products for that reason they take care of professional support, implementation of comercial tools for development with Secncha etc...
 
 % conclusions on selected framework
 
@@ -906,6 +901,9 @@ http://docencia.etsit.urjc.es/moodle/mod/resource/view.php?id=4343}}
 \bibitem{sencha performance}\textbf{sencha performance}\\
 {\footnotesize\url{http://www.sencha.com/blog/category/html5-developer-scorecard}}
 
+\bibitem{sencha support}\textbf{sencha support}\\
+{\footnotesize\url{http://www.sencha.com/support/}}
+
 \bibitem{sencha Learn}\textbf{sencha Learn}\\
 {\footnotesize\url{http://www.sencha.com/learn/touch/}}
 
@@ -932,6 +930,10 @@ http://docencia.etsit.urjc.es/moodle/mod/resource/view.php?id=4343}}
 
 \bibitem{sencha Apps}\textbf{sencha Apps}\\
 {\footnotesize\url{http://www.sencha.com/apps/}}
+
+\bibitem{sencha Devs}\textbf{sencha Devs}\\
+{\footnotesize\url{http://www.senchadevs.com/}}
+
 
 \end{thebibliography}
 \end{document}
