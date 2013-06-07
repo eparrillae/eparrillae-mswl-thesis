@@ -112,11 +112,11 @@ California, 94105, USA.\\
 \chapter*{Summary}
 \label{chap:summary}
 
-In my daily work I play the role of Technical Manager \footnote{http://www.linkedin.com/in/eparrilla} who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
+In my daily work I play the role of Technical Manager who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
 
 Beginning this year I have started working on a personal project called 'KuDo', the idea is to setup a start-up focused in the development of web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets etc...
 
-This Master Thesis is the baseline activity I have performed for the KuDo project in order to determine which technical solution could fit better for this purpose from the wide range of Web Mobile App Frameworks existing nowadays.
+This Master Thesis is the baseline activity I have performed for the KuDo project in order to determine which technical solution could fit better for this purpose from the wide range of web mobile app frameworks existing nowadays.
 
 All paper work done for this Master Thesis is Open Source material licensed under a Creative Commons Attribution 3.0 License\footnote{http://creativecommons.org/licenses/by/3.0/} and the code of the prototypes implemented in the context of this thesis is under MIT License\footnote{http://opensource.org/licenses/MIT}.
 
@@ -130,25 +130,25 @@ Also the different activities performed in this Master Thesis have been describe
 \url{
 http://eparrillae.net/wordpress/?tag=mswl-thesis}
 
-I would like to thank my Master Thesis tutors Gregorio Robles\footnote{http://gsyc.urjc.es/~grex/} and Daniel Izquierdo\footnote{http://www.linkedin.com/in/dicortazar} for guiding the whole process, always providing good advices and added-value to this work.
+I would like to thank my Master Thesis tutors Gregorio Robles\footnote{http://gsyc.urjc.es/grex/} and Daniel Izquierdo\footnote{http://www.linkedin.com/in/dicortazar} for guiding the whole process, always providing good advices and added-value to this work.
 
-Finally I would like to specially thank my colleague Solange Molina Urrutia\footnote{http://www.linkedin.com/in/smolina} who has been a reference for me in this work due to her huge background expertise in Mobile App developments.  
+Finally I would like to specially thank my colleague Solange Molina Urrutia\footnote{http://www.linkedin.com/in/smolina} who has been a reference for me in this work due to her huge background expertise in mobile app developments.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Overview and Objectives}
 \label{chap:overview}
 
-Nowadays mobile devices such as smartphones and tablets have become the preferred tools for communicating with each other, for that reason there are lots of technical solutions for implementing applications that can be run under those devices and that offer a clear enhancement in the end-user experience. That is the reason why the KuDo project is focused in these kind of developments, there is a clear niche of new opportunities in this software development field.
+Nowadays mobile devices such as smartphones and tablets have become the preferred tools for communicating with each other, for that reason there are lots of technical solutions for implementing applications that can be run under those devices and that offer a clear enhancement in the end-user experience. That is the reason why the KuDo project is focused in this kind of developments, there is a clear niche of new opportunities in this software development field.
 
-Mobile Apps can be grouped in two categories\footnote{https://wiki.developerforce.com/page/Native,\_HTML5,\_or\_Hybrid:\_Understanding\_Your\_Mobile\_Application\_Development\_Options} :
+Mobile apps can be grouped in two categories\footnote{http://www.bbconsult.co.uk/Mobile-Web-Software-Development.aspx} :
 
 \begin{itemize}
- \item \textbf{Native/Hybrid Apps}: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly onto the device. Users typically acquire these apps through an online store or marketplace such as The Apple Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
+ \item \textbf{Native/Hybrid Apps}: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly in the device. Users typically acquire these apps through an online store or marketplace such as The Apple Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
  \item \textbf{Web-based Apps}: When we talk about mobile web apps we are referring to Internet-enabled apps (compliant with HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} , CSS3\footnote{http://www.w3.org/TR/CSS/} and Javascript\footnote{http://www.w3.org/standards/webdesign/script.html}  standards) that allow web developers to quickly and easily create mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser. 
 \end{itemize}
 
-For the KuDo project I had to decide which type of Mobile Apps I would develop, table below summarize using a SWOT\footnote{https://en.wikipedia.org/wiki/SWOT\_analysis} analysis the advantages and disadvantages of Native Apps:
+For the KuDo project I had to decide which type of mobile apps I would develop, the table below summarizes using a SWOT\footnote{https://en.wikipedia.org/wiki/SWOT\_analysis} analysis the advantages and disadvantages of Native Apps:
 
 \begin{center}
 \rowcolors{1}{}{}
@@ -178,7 +178,7 @@ For the KuDo project I had to decide which type of Mobile Apps I would develop, 
     \end{tabular}
 \end{center}
 
-Table below summarize using a SWOT analysis the advantages and disadvantages of Web-based Apps:
+The table below summarizes using a SWOT analysis the advantages and disadvantages of Web-based Apps:
 
 \begin{center}
 \rowcolors{1}{}{}
@@ -212,10 +212,10 @@ To help me decide which type of solution I should take for my KuDo project I ask
  \item \textbf{Does the mobile app require the use of any special device features (i.e., camera, the camera’s flash, accelerometer, etc.)?} In priciple my idea is to implement simple apps with a high level of responsiveness\footnote{https://en.wikipedia.org/wiki/Responsiveness}  from the user's point of view but the access to the device hardware components is not a must.
  \item \textbf{What is my budget?} Very limited :)
  \item \textbf{Does the mobile app need to be Internet-enabled?} This is not a must for the first applications that I plan to develop in the context of KuDo project but for sure in future versions it would be interesting to be able to link the apps with external educational resources such as Wikipedia, museums, libraries etc...
- \item \textbf{Do I need to target all mobile devices or just certain devices?} Portability is a key issue, the apps should be supported by most of the devices and the idea of having several codebases does not fit in KuDo project.
- \item \textbf{What programming languages do I already know?} Here I have to say that my programming background expertise is more oriented to backend developments and therefore I am ready to start implementing low-level tools using Native apps but in the other side for me it is a good chance to improve my knowledge in web-developments which is a field I cannot explore in my daily professional work.
- \item \textbf{How important is speed and performance?} It is important both using Native and Web-based apps.
- \item \textbf{How will this app be monetized effectively?} I have some experience in setting up Paypal\footnote{https://www.paypal.com/es/webapps/mpp/home}  systems but I would need some help with this issue, again this is an interesting challenge for me.
+ \item \textbf{Do I need to target all mobile devices or just certain devices?} Portability is a key issue, the apps should be supported by most of the devices and the idea of having several codebases does not fit within KuDo project.
+ \item \textbf{What programming languages do I already know?} Here I have to say that my programming background expertise is more oriented to backend developments and therefore I am ready to start implementing low-level tools using native apps. But on the other side for me it is a good chance to improve my knowledge on web-developments which is a field I cannot explore in my daily professional work.
+ \item \textbf{How important is speed and performance?} It is important both using native and web-based apps.
+ \item \textbf{How will this app be monetized effectively?} I have some experience in setting up Paypal\footnote{https://www.paypal.com/es/webapps/mpp/home}  systems but I would need some help with this issue; Again, this is an interesting challenge for me.
 \end{itemize}
 
 Summarizing, due to the type of developments I am planing to do I think the Web-based Apps solutions are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting challenge that shall improve my professional background.
@@ -289,39 +289,39 @@ The Business Readiness Rating model offers a trusted and open framework for soft
 \section{Data Sources}
 \label{sec:data}
 
-For analyzing the different web-based Mobile App frameworks and provide a reliable comparison, data from different primary/secondary sources will be used. In this section I present the most important ones; other sources will be referenced or explained directly (for example using a footnote) when the corresponding fact, metric or argument is discussed.
+For analyzing the different web-based mobile app frameworks and provide a reliable comparison, data from different primary/secondary sources will be used. In this section I present the most important ones; other sources will be referenced or explained directly (for example using a footnote) when the corresponding fact, metric or argument is discussed.
 
-The starting point for getting data on the selected solutions are the official websites of jQuery Mobile\cite{jquery} and Sencha Touch\cite{sencha} , they provide reliable information about their functionality, history, documentation and support. 
+The starting point for getting data on the selected solutions are the official websites of jQuery Mobile\cite{jquery} and Sencha Touch\cite{sencha}, they provide reliable information about their functionality, history, documentation and support. 
 
 One of the data sources we studied in the MSWL was Ohloh\cite{Ohloh} which is a free public
-directory of open source software and people, owned and operated by BlackDuck Software Inc., a consulting company specialized in gathering and providing information about open source software projects. Some metrics present in Ohloh site are provided by Ohloh specific tools and others are provided by gathering the information provided by Ohloh users for their own projects or the projects they are interested in.
+directory of open source software and people, owned and operated by BlackDuck Software Inc., a consulting company specialized in gathering and providing information about open source software projects. Metrics present in Ohloh site are provided by Ohloh specific tools and others are provided by gathering the information provided by Ohloh users for their own projects or the projects they are interested in.
 
-Both jQuery Mobile and Sencha Touch are sub-projects of other parent projects (jQuery and Sencha), in Ohloh we can find information on both the parent and child projects:
+Both jQuery Mobile and Sencha Touch are sub-projects of other parent projects (jQuery and Sencha), in Ohloh we can find information about both the parent and child projects:
 
 \begin{itemize}
  \item For jQuery Mobile there is a dedicated page in Ohloh\cite{ojquery} that provides very valuable information about the project for our trade-off analysis. Also the parent project jQuery\cite{ojqueryparent} and other related extensions have their own pages in Ohloh data source.
- \item For Sencha Touch the situation is not the same, even though we can find an entry in Ohloh for the parent Sencha project\cite{osencha} the page has no activity since a long time, therefore unfortunately we cannot take Ohloh as data source for finding information in the case of Sencha Touch because its code reposiroty is not open to the public and we shall have to use other sources.
+ \item For Sencha Touch the situation is not the same. Even though we can find an entry in Ohloh for the parent Sencha project\cite{osencha}, the page has no activity since a long time. Therefore unfortunately we cannot take Ohloh as data source for finding information in the case of Sencha Touch, because its code reposiroty is not open to the public and we shall have to use other sources.
 \end{itemize}
 
-In the MSWL we studied other data sources like FLOSSMetrics\cite{FLOSSMetrics} , FLOSSmole\cite{FLOSSmole} and FLOSShub\cite{FLOSShub} which provide centralized access to data analysis (charts, tables and other quantitative information) of free/libre/open source projects hosted in forges such as Sourceforge\footnote{https://sourceforge.net/} , GForge\footnote{http://gforge.org/gf/}  etc... Also we saw the FLOSSpapers project\cite{FLOSSpapers} allows to perform queries on papers published on these purposes.
+In the MSWL we studied other data sources like FLOSSMetrics\cite{FLOSSMetrics}, FLOSSmole\cite{FLOSSmole} and FLOSShub\cite{FLOSShub} which provide centralized access to data analysis (charts, tables and other quantitative information) of free/libre/open source projects hosted in forges such as Sourceforge\footnote{https://sourceforge.net/}, GForge\footnote{http://gforge.org/gf/} etc... Also we saw that the FLOSSpapers project\cite{FLOSSpapers} allows to perform queries on papers published on these purposes.
 
-Unfortunately because the technologies we are studying in this thesis are quite new there is no data for both jQuery Mobile and Sencha Touch project in none of the data sources cited above so I had to look for other sources of information.
+Unfortunately because the technologies we are studying in this thesis are quite new, there is no data for both jQuery Mobile and Sencha Touch project in none of the data sources cited above, so I had to look for other sources of information.
 
-One of the most interesting data sources nowadays is LinkedIn\footnote{https://www.linkedin.com/}  a social networking website for exchanging profesisonal information, there are lots of groups devoted to Mobile Apps technologies, I have performed a seach in several of those groups looking for information on jQuery Mobile and Sencha, specially in the "iPhone, Android, iPad, Tablet \& Mobile Application Development"\cite{linkedin1},  the "Mobile Software Development Group"\cite{linkedin2} and the "Developers HTML5, Android, iOS, Windows, Java, BlackBerry"\cite{linkedin3} groups which are very active. LinkedIn allows users to start discussions and polls in the groups they are subscribed to. 
+One of the most interesting data sources nowadays is LinkedIn\footnote{https://www.linkedin.com/},  a social networking website for exchanging profesisonal information, where there are lots of groups devoted to mobile apps technologies. I have performed a seach in several of those groups looking for information on jQuery Mobile and Sencha, specially in the "iPhone, Android, iPad, Tablet \& Mobile Application Development"\cite{linkedin1},  the "Mobile Software Development Group"\cite{linkedin2} and the "Developers HTML5, Android, iOS, Windows, Java, BlackBerry"\cite{linkedin3} groups which are very active. LinkedIn allows users to start discussions and polls in the groups they are subscribed to. 
 
-Another interesting tool I have discovered during my thesis is Survey Monkey\footnote{http://es.surveymonkey.com/} ,a tool for publising quite complete polls for free, the system is more complete than other solutions like LinkedIn polls system.
+Another interesting tool I have discovered during my thesis is Survey Monkey\footnote{http://es.surveymonkey.com/}, a tool for publising quite complete polls for free, the system is more complete than other solutions like the LinkedIn polls system.
 
-Also for searching information on some metrics included in this trade-off study I have used Quora\footnote{https://www.quora.com/}  wuich is a question-and-answer website wich lots of information on the Mobile Web Apps field.
+Also for searching information on some metrics included in this trade-off study, I have used Quora\footnote{https://www.quora.com/}  wuich is a question-and-answer website which lots of information on the mobile web apps field.
 
 Also Google discussion groups\footnote{https://groups.google.com} which contain a searchable archive of more than 700 million Usenet postings from a period of more than 20 years is a valuable source of information.
 
-A pretty good resource for searching useful articles about Mobile Web Apps development (and in general any kind of development technologies) is IBM Developer Works site that has dedicated sections for different frameworks like Dojo JS\footnote{https://www.ibm.com/developerworks/topics/dojo} , jQuery Mobile\footnote{http://www.ibm.com/developerworks/topics/jquerymobile} , PhoneGap\footnote{https://www.ibm.com/developerworks/topics/phonegap} , Sencha Touch\footnote{http://www.ibm.com/developerworks/topics/sencha\%20touch}  etc...	 
+A good resource for searching useful articles about mobile web apps development (and in general any kind of development technologies) is the IBM Developer Works site that has dedicated sections for different frameworks like Dojo JS\footnote{https://www.ibm.com/developerworks/topics/dojo}, jQuery Mobile\footnote{http://www.ibm.com/developerworks/topics/jquerymobile}, PhoneGap\footnote{https://www.ibm.com/developerworks/topics/phonegap}, Sencha Touch\footnote{http://www.ibm.com/developerworks/topics/sencha\%20touch}  etc...	 
 
 Regarding books available for each project, Amazon\footnote{http://www.amazon.com} is the reference data source I have used.
 
-Regarding demos/presentations I have used Slideshare as main data source, there are many resources available for jQueryMobile\footnote{http://www.slideshare.net/search/slideshow?searchfrom=header\&q=jquery+mobile}  and Sencha Touch\footnote{http://www.slideshare.net/search/slideshow?searchfrom=header\&q=sencha+touch}  there.
+Regarding demos/presentations, I have used Slideshare as main data source. There are many resources available for jQueryMobile\footnote{http://www.slideshare.net/search/slideshow?searchfrom=header\&q=jquery+mobile}  and Sencha Touch\footnote{http://www.slideshare.net/search/slideshow?searchfrom=header\&q=sencha+touch}  there.
 
-Also for having a better idea on measuring some of the metrics related to the functionalities provided by each framework like how easy is the installation process, available IDEs, portability to different mobile devices etc... I have developed a couple of prototype examples one for jQuery Mobile and another for Sencha Touch, the source code of these examples can be found in the thesis Github repository under:\\
+Also for having a better idea on measuring some of the metrics related to the functionalities provided by each framework, like how easy is the installation process, available IDEs, portability to different mobile devices etc... I have developed a couple of prototype examples: one for jQuery Mobile and another for Sencha Touch. The source code of these examples can be found in the thesis Github repository under:\\
 
 \url{https://github.com/eparrillae/eparrillae-mswl-thesis/tree/master/MasterThesis/prototypes}
 
@@ -337,17 +337,17 @@ As stated before, I am going to follow the "Business Readiness Rating for Open S
 \label{sec:phase1}
 This first phase is focused in setting the number of categories used and the different metrics that shall be evaluated per category. The canonical OpenBRR model recommends to focus in not more than seven categories, but in order to provide a more general overview, I have considered the twelve categories present in the model.
 
-Regarding the metrics, I have reviewed the list of metrics provided by the canonical OpenBRR model template, if these metrics fit well with the type of tools I have to analyze (Mobile Web App) I have left them as they are but in some cases I have substituted the default metrics with new ones that measure better the quality of the products.
+Regarding the metrics, I have reviewed the list of metrics provided by the canonical OpenBRR model template. If these metrics fit well with the type of tools I have to analyze (mobile web app) I have left them as they are but in some cases I have substituted the default metrics with new ones that measure better the quality of the products.
 
 \subsection{Functionality Category metrics definition}
 \label{Functionality Category metrics definition}
 
-The most important category within this study is the "Functionality" category, here I have defined a set of very specific criteria to evaluate precisely the selected frameworks, to be able to define a complete subset of metrics I have used two different sources:
+The most important category within this study is the "Functionality" category, here I have defined a set of very specific criteria to evaluate precisely the selected frameworks. To be able to define a complete subset of metrics I have used two different sources:
 
 \begin{itemize}
- \item The experience analyzing the available solutions in the market for developing Mobile Web Apps done in previous section "Selected Frameworks".
+ \item The experience analyzing the available solutions in the market for developing mobile web apps done in previous section "Selected Frameworks".
   \item The experience developing jQuery Mobile and Sencha Touch prototypes.
- \item Wikipedia comparison tables between web-based Mobile App frameworks\cite{wikipedia1}  and HTML5/CSS3/Javascript frameworks\cite{wikipedia2}.
+ \item Wikipedia comparison tables between web-based mobile app frameworks \cite{wikipedia1}  and HTML5/CSS3/Javascript frameworks \cite{wikipedia2}.
 \end{itemize}
 
 \subsection{OpenBRR improvements with new metrics}
@@ -358,7 +358,7 @@ The following new metrics have been added to this study:
 \subsubsection{Multiplatform support}
 \label{Multiplatform support}
 
-I have added this metric in the \textbf{Usability} category, one of the key points of the development of KuDo projects is that the applications can be run in the most popular mobile platforms used nowadays, therefore, it is quite important to ensure that the salected framework runs well in different web browsers and mobile devices containing those web browsers.
+I have added this metric in the \textbf{Usability} category. One of the key points of the development of KuDo projects is that the applications can be run in the most popular mobile platforms used nowadays. Therefore, it is quite important to ensure that the selected framework runs well in different web browsers and mobile devices containing those web browsers.
 
 The score assigned to this metric will be:
 \begin{itemize}
@@ -370,7 +370,7 @@ The score assigned to this metric will be:
 \subsubsection{Is there a dedicated information (web page, wiki, etc) for security?}
 \label{Is there a dedicated information (web page, wiki, etc) for security?}
 
-I have added this metric in the \textbf{Security} category, even though security is not a key aspect for the KuDo project because the applications that shall be deployed are going to be very simple ones with no authentication procedures it is always interesting which support is provided by default regarding this aspect.
+I have added this metric in the \textbf{Security} category, even though security is not a key aspect for the KuDo project, because the applications that shall be deployed are going to be very simple ones with no authentication procedures it is always interesting which support is provided by default.
 
 The score assigned to this metric will be:
 \begin{itemize}
@@ -382,7 +382,7 @@ The score assigned to this metric will be:
 \subsubsection{Architecture based on design patterns}
 \label{Architecture based on design patterns}
 
-I have added this metric in the \textbf{Scalability} category, the idea is to check if the selected framework is built on top of a robust architecture that can be extended in the future, for that reaosn the usage of design patterns is so important.
+I have added this metric in the \textbf{Scalability} category. The idea is to check if the selected framework is built on top of a robust architecture that can be extended in the future. For that reaosn the usage of design patterns is so important.
 
 The score assigned to this metric will be:
 \begin{itemize}
@@ -394,19 +394,19 @@ The score assigned to this metric will be:
 \subsubsection{Are there any repositories of 3rd party UI Plug-ins}
 \label{Are there any repositories of 3rd party UI Plug-ins}
 
-I have added this metric in the \textbf{Architecture} category, for any kind of User Interface development it is quite important to have available a good toolkit of UI widgets coming by default with the selected solution, but also if there are external repositories containing widgets implemented by 3rd party developers this helps a lot in extending the capabilities provided by the applications.
+I have added this metric in the \textbf{Architecture} category. For any kind of user interface development it is quite important to have a good toolkit of UI widgets coming by default with the selected solution, but also if there are external repositories containing widgets implemented by 3rd party developers, this helps a lot in extending the capabilities provided by the applications.
 
 The score assigned to this metric will be:
 \begin{itemize}
- \item more than 5 repositories available: 5
+ \item More than 5 repositories available: 5
  \item 1 to 5 repositories available: 3
- \item 0 repositories available: 1
+ \item 1 repositories available: 1
 \end{itemize}
 
 \subsubsection{Backend Services Support}
 \label{Backend Services Support}
 
-I have added this metric in the \textbf{Architecture} category, the idea is to measure the availability of pluggable backend libraries for connecting with Databases, external File Systems, Web Services etc...
+I have added this metric in the \textbf{Architecture} category. The idea is to measure the availability of pluggable backend libraries for connecting with databases, external file systems, web services etc...
 
 The score assigned to this metric will be:
 \begin{itemize}
@@ -418,7 +418,7 @@ The score assigned to this metric will be:
 \subsubsection{Enable/disable features through configuration}
 \label{Enable/disable features through configuration}
 
-I have added this metric in the \textbf{Architecture} category, the idea is to measure how easily the framwork can be configured.
+I have added this metric in the \textbf{Architecture} category. The idea is to measure how easily the framwork can be configured.
 
 The score assigned to this metric will be:
 \begin{itemize}
@@ -430,7 +430,7 @@ The score assigned to this metric will be:
 \subsubsection{Programming Languages}
 \label{Programming Languages}
 
-I have added this metric in the \textbf{Architecture} category, as we saw during the "Communities" subject of the MSWL for a given development the support of more languages in the core source code of the framework means more flexiblity and also more people may get involved in the project, if the project is completely built based in just one programming language is possible that a developer who does not know about the language used on it cannot collaborate.
+I have added this metric in the \textbf{Architecture} category. As we saw during the "Communities" subject of the MSWL, for a given development the support of more languages in the core source code of the framework means more flexiblity and also more people may get involved in the project. If the project is completely built based in just one programming language it is possible that a developer who does not know about the language used on it cannot collaborate.
 
 But also is important the amount of code used in a concrete programming language, it would not be good if we say that a FLOSS project uses three different programming languages when one of them just has a few lines of code.
 
@@ -444,12 +444,12 @@ The score assigned to this metric will be:
 \subsubsection{Framework web site quality}
 \label{Framework web site quality}
 
-I have added this metric in the \textbf{Documentation} category, a good web site should provide a centralized point for getting information on the project's objectives, license, access to source code, forums, mailing lists etc...
+I have added this metric in the \textbf{Documentation} category. A good web site should provide a centralized point for getting information on the project's objectives, license, access to source code, forums, mailing lists, etc..
 
 Also the information should be provided for the various end-users roles: 
 \begin{itemize}
- \item users with no experience using Mobile App frameworks
- \item users with experience using Mobile App frameworks but with no experience using this particular framework
+ \item users with no experience using mobile app frameworks
+ \item users with experience using mobile app frameworks but with no experience using this particular framework
  \item developers of the framework
  \item project administrators
 \end{itemize}
@@ -463,9 +463,9 @@ The score assigned to this metric will be:
 
 \subsubsection{Longevity}
 \label{Longevity}
-A new metric is introduced in the \textbf{Community} category. I think that the longevity of a given project must be measured combining two different criteria, in one hand the project's age, but also it has to be analyzed if during the whole project lifecycle there has been development activity, a very old project with just a few activity is really useless for the KuDo project purposes.
+A new metric is introduced in the \textbf{Community} category. I think that the longevity of a given project must be measured combining two different criteria. In one hand the project's age, but also it has to be analyzed if during the whole project lifecycle there has been development activity, a very old project with just a few activity is really useless for the KuDo project purposes.
 
-Taking into account the previous assertions the normalized scores to assign to this metric will be:
+Taking into account the previous assertions, the normalized scores to assign to this metric will be:
 \begin{itemize}
  \item Young project (more than 1 year old) and increasing lines of code production : 1
   \item Medium project (more than 5 years old) and increasing lines of code production : 3
@@ -486,39 +486,39 @@ The score assigned to this metric will be:
 \subsubsection{License}
 \label{License}
 
-A new metric is introduced in the \textbf{Professionalism} category. For the KuDo project it is a must that the Mobile App solutions is licensed under an OSI-approved\footnote{http://www.opensource.org/licenses} FLOSS license. Also if the license allows to mix the product with proprietary code is an enhancement.
+A new metric is introduced in the \textbf{Professionalism} category. For the KuDo project it is a must that the mobile app solutions is licensed under an OSI-approved\footnote{http://www.opensource.org/licenses} FLOSS license. Also if the license allows to mix the product with proprietary code is an enhancement.
 
 Taking into account the previous assertions the normalized scores to assign to this metric will be:
 \begin{itemize}
- \item Open Source but Non-OSI-Approved license: 1
- \item OSI-Approved and "GPL-like" license: 3
- \item OSI-Approved and "weak copyleft" license: 5
+ \item Non-OSI-Approved license: 1
+ \item OSI-Approved and "copyleft"\footnote{https://www.gnu.org/copyleft/} license: 3
+ \item OSI-Approved and "weak copyleft/permissive"\footnote{https://en.wikipedia.org/wiki/Permissive\_free\_software\_licence}  license: 5
 \end{itemize}
 
 \section{Phase 2: Target Usage Assessment}
 \label{sec:phase2}
-This second phase consists in setting the category and metric weights according to the KuDo project requirements. The canonical OpenBRR model recommends to focus in not more than seven categories, but as I said before, in order to provide a more general overview I will consider the twelve categories present in the model.
+This second phase consists in setting the category and metric weights according to the KuDo project requirements. The canonical OpenBRR model recommends to focus in not more than seven categories, but as I said before, in order to provide a more general overview, I will consider the twelve categories present in the model.
 
 If we were considering all the categories equal in importance, we should weight each one of them with 8,33\%. Our assessment will consider this number, in order to weight more than 8\% the categories considered relevant for the KuDo project needs, and less than 8\% the categories considered not so relevant.
 
-The most important selected categories have been \textbf{Functionality} and \textbf{Usability}. Each one of them have been given a weight of 12\%, so together they reach 36\% of the total evaluation.
+The most important selected categories have been \textbf{Functionality} and \textbf{Usability}. Each one of them have been given a weight of 12\%, so together they reach 24\% of the total evaluation.
 
-The OpenBRR model provides no ready-to-collect metrics for \textbf{Functionality}, allowing the evaluator to create them in a tailored way according to the customer's requirements, in previous section "Functionality Category metrics definition" I have explained the criteria followed to define the list of metrics.
+The OpenBRR model provides no ready-to-collect metrics for \textbf{Functionality}, allowing the evaluator to create them in a tailored way according to the customer's requirements. In the previous section "Functionality Category metrics definition", I have explained the criteria followed to define the list of metrics.
 
 \textbf{Support}, \textbf{Documentation} and \textbf{Community} are also desirable aspects, that ensure the liveness of the community of any piece of software, and also guarantee usability since good instructions and advices smooth out the
 difficulties of any tool. For this reason these categories have been
 weighted with 10\%. 
 
-With the same arguments I have evaluated \textbf{Adoption}, but we also need to know that there are two influent factors in adoption: on one hand, we need time for any tool to be widely used. On the other hand, "trends" have also influence in the IT world; and certain
+With the same arguments, I have evaluated \textbf{Adoption}, but we also need to know that there are two influent factors in adoption: on one hand, we need time for any tool to be widely used. On the other hand, "trends" have also influence in the IT world; and certain
 companies or tools come in a particular time to the crest of the wave, but quickly sink into obscurity due to the dynamism of the technologies environments. 
 
-\textbf{Architecture}  and \textbf{Scalability} are also key aspects of this trade-off, as I are looking for a framework that serves as a baseline for the developments done in the context of the KuDo project, this framework should provide an architectural design modular and flexible enough to allow the integration of new components to the "core" in an easy way.
+\textbf{Architecture}  and \textbf{Scalability} are also key aspects of this trade-off, as I am looking for a framework that serves as a baseline for the developments done in the context of the KuDo project, this framework should provide an architectural design modular and flexible enough to allow the integration of new components to the "core" in an easy way.
 
-About \textbf{Quality}, \textbf{Security} and \textbf{Performance} the given weight has been 5\% as I have not defined yet strong requirements on this purpose, but they desirable features specially for the future of the project when the mobile apps to be developed become more and more complex.
+About \textbf{Quality}, \textbf{Security} and \textbf{Performance} the given weight has been 5\%, as I have not defined yet strong requirements on this purpose, but they desirable features specially for the future of the project when the mobile apps to be developed become more and more complex.
 
-Finally \textbf{Professionalism} has been given a weight of 5\%, it is important that the selected framework is supported by a robust community and in the particular case of jQuery Mobile and Sencha Touch both are sub-projects that were created from a bigger parent project (jQuery and Sencha) which ensures its stability. 
+Finally \textbf{Professionalism} has been given a weight of 5\%. It is important that the selected framework is supported by a robust community and in the particular case of jQuery Mobile and Sencha Touch both are sub-projects that were created from a bigger parent project (jQuery and Sencha) which ensures its stability. 
 
-In conclusion, in table \ref{OpenBRR2} I present the categories and
+In conclusion, in Table \ref{OpenBRR2} I present the categories and
 their resulting weights for our evaluation.
 
 \begin{table}[ht]
@@ -576,29 +576,29 @@ The OpenBRR spreadsheet containing the metrics final scores and comments justify
 \url{
 https://github.com/eparrillae/eparrillae-mswl-thesis/blob/master/MasterThesis/thesis/OpenBRR_Templates/BRR_Template_jQueryMobile.ods}
 
-The final score for jQuery Mobile is 4.0015, which is a very high score, that means that this framework covers most of the needs required for the KuDo development project.
+The final score for jQuery Mobile is 4.0015, which is a very high score. That means that this framework covers most of the needs required for the KuDo development project.
 
 In the \textbf{Functionality} category we can see that most of the requirements are covered, the framework seems to be strong in areas like easy to install and use, multiplatform support, compliance with HTML, CSS3 standards for the web, themes customization and availability of 3rd party plugins/extensions. Also the development environment which is a key part of the implementation process is fully covered, even though there is no dedicated plugin for Eclipse IDE which is the one I use it is possible to do this integration through Aptana IDE\footnote{http://stackoverflow.com/questions/4721124/how-to-enable-jquery-support-in-aptana-studio-3} .
 
-The weakest points in the case of functionality metrics are centralized in the access to native features of the mobile device that has to be done through other tools like \footnote{http://phonegap.com/}  and the support of some advances features like media audio/video and look\&feel stencils which is very poor at the moment.
+The weakest points in the case of functionality metrics are located in the access to native features of the mobile device that has to be done through other tools like\footnote{http://phonegap.com/} and the support of some advanced features like media audio/video and look\&feel stencils which is very poor at the moment.
 
-In the \textbf{Usability} category again we can see that the framework is easy to install and use in a wide range of devices, this is very important for the KuDo project, portability problems could be an issue and the selected solution should cope with that in the proper way.
+In the \textbf{Usability} category, again, we can see that the framework is easy to install and use in a wide range of devices. This is very important for the KuDo project, portability problems could be an issue and the selected solution should cope with that in the proper way.
 
-For measuring the \textbf{Quality} category metrics we have accessed jQuery Mobile GitHub repository\cite{jQuery Mobile Github repo} where we can find useful information about developers involved in the project, project milestones and roadmap, bugs/enhancements raised in the code etc...
+For measuring the \textbf{Quality} category metrics we have accessed jQuery Mobile GitHub repository\cite{jQuery Mobile Github repo} where we can find useful information about developers involved in the project, project milestones and roadmap, bugs/enhancements raised in the code, etc..
 
-In terms of major releases jQuery Mobile is in the range of 1 to 3 major releases which means that teh project is active but its community still is not very big, the latest release is from the 20th of Februarty 2013 (v1.3.0) so we have a very recent version to be downloadable and installed.
+In terms of major releases jQuery Mobile is in the range of 1 to 3 major releases which means that the project is active, but its community is not very big yet. The latest release is from the 20th of February 2013 (v1.3.0) so we have a very recent version to be downloaded and installed.
 
-The activity of fixing bugfixes in the code repository that is measured by the rest of metrics in this category clearly show that the jQuery Mobile community is alive, this is very important for the KuDo project as I would like to take a baseline solution which is alive and garantees the close future of teh project.
+The activity of fixing bugfixes in the code repository that is measured by the rest of metrics in this category clearly show that the jQuery Mobile community is alive. This is very important for the KuDo project as I would like to take a baseline solution which is alive and garantees the close future of the project.
 
-In the \textbf{Security} category we can see in Github repo\footnote{https://github.com/jquery/jquery-mobile/issues?labels=4+-+High\&page=1\&state=open}  that there are no major open issues in terms of security, the framework is very simple and there are no specific packages dedicated to security. Also in this category we have the new metric that checks if there is a dedicated web page for security issues, we see that there are no specific documentations on this regard.
+In the \textbf{Security} category, we can see in Github repo\footnote{https://github.com/jquery/jquery-mobile/issues?labels=4+-+High\&page=1\&state=open}  that there are no major open issues in terms of security. The framework is very simple and there are no specific packages dedicated to security. Also in this category we have the new metric that checks if there is a dedicated web page for security issues, we see that there are no specific documentations on this regard.
 
-In the \textbf{Performance} category we see some of the weakest points of this framework, there are no formal reports about the performance of the framework in different devices, also jQuery does not provide any benchmark/sandbox for testing purposes, whihc means that the developer itself shall have to write from scratch the proper unitary/integration tests which is a clear pitfall of this solution. Also I could not find any wide documentaiton about tunning performance, for that reason this framework has slow scores in this category.
+In the \textbf{Performance} category we see some of the weakest points of this framework. There are no formal reports about the performance of the framework in different devices, also jQuery does not provide any benchmark/sandbox for testing purposes, which means that the developer itself shall have to write the proper unitary/integration tests from scratch which is a clear pitfall of this solution. Also I could not find any wide documentation about tunning performance, for that reason this framework has slow scores in this category.
 
-In the \textbf{Scalability} category it is clear that jQuery Mobile is based on a pluggable architecture which is quite extensible but the usage of standard design patterns is not provided by default just the Abstract Factory design pattern is used for its UI widgets toolkit, other patterns should be built by yourself from scratch like for example the implementation that the M Project\footnote{http://www.the-m-project.org/}  has done.
+In the \textbf{Scalability} category, it is clear that jQuery Mobile is based on a pluggable architecture which is quite extensible but the usage of standard design patterns is not provided by default just the Abstract Factory design pattern is used for its UI widgets toolkit. Other patterns should be built by yourself from scratch like for example the implementation that the M Project\footnote{http://www.the-m-project.org/}  has done.
 
-In the \textbf{Architecture} category we see that there are wide range of 3rd party plugins and extensions\cite{jQuery Mobile resources} available which is quite importante for the KuDo project, unfortunately most of those resources are related with the presentation layer of the applications and the support for plugins to connect backend services such as databases, web services etc... is not fully covered. 
+In the \textbf{Architecture} category, we see that there is a wide range of 3rd party plugins and extensions\cite{jQuery Mobile resources} available which is quite importante for the KuDo project. Unfortunately most of those resources are related with the presentation layer of the applications and the support for plugins to connect backend services such as databases, web services, etc.. is not fully covered. 
 
-In terms of programming languages figure below shows the results of executing sloccount\footnote{http://www.dwheeler.com/sloccount/} over jQuery Mobile code in Ohloh statistics page:
+In terms of programming languages, figure below shows the results of executing SLOC\footnote{http://www.dwheeler.com/sloccount/} over jQuery Mobile code in the Ohloh statistics page:
 
 \begin{figure}[H]
     \centering
@@ -607,13 +607,13 @@ In terms of programming languages figure below shows the results of executing sl
     \label{figure:jquerylanguages}
  \end{figure}
 
-We see that most of the code is done using Javascript/HTML, which means that for implementing Mobile Apps using this framework requires a huge background experience in these languages, this could be a challenge for me as my experience is not so deep in that field.
+We see that most of the code is done using Javascript/HTML, which means that for implementing mobile apps using this framework requires a huge background experience in these languages, this could be a challenge for me as my experience is not so deep in that field.
 
-In the \textbf{Support} category we can clearly see that the jQuery Mobile community is very active and the mailing lists work very well but if we are looking for any kind of professional support that capability is missing within the project, for that reason we conclude that for using jQuery Mobile as baseline for KuDo developments it is necessary to have some background in web-based software development.
+In the \textbf{Support} category we can clearly see that the jQuery Mobile community is very active and the mailing lists work very well. But if we are looking for any kind of professional support that capability is missing within the project, for that reason we conclude that for using jQuery Mobile as baseline for KuDo developments it is necessary to have some background in web-based software development.
 
-Regarding \textbf{Documentation} category I have to say that the project is really well-documented, there are lots of books about jQuery Mobile and the web site contains all necessary resources for both developers without experience and advanced ones, in this category all scores are high. This applies also for \textbf{Adoption} category, there are many real-world examples of Mobile Apps developed using jQuery Mobile framework.
+Regarding the \textbf{Documentation} category, I have to say that the project is really well-documented, there are lots of books about jQuery Mobile and the web site contains all necessary resources for both developers without experience and advanced ones, in this category all scores are high. This applies also for the \textbf{Adoption} category, there are many real-world examples of mobile apps developed using jQuery Mobile framework.
 
-In the \textbf{Community} category we see that average volume of messages in the mailing lists in the last six months is high, also the number of commits in the last month is good but the number of contributors in this period is still low as shown in figure below:
+In the \textbf{Community} category, we see that average volume of messages in the mailing lists in the last six months is high, also the number of commits in the last month is good but the number of contributors in this period is still low as shown in figure below:
 
 \begin{figure}[H]
     \centering
@@ -622,17 +622,17 @@ In the \textbf{Community} category we see that average volume of messages in the
     \label{figure:jquerymonthly}
  \end{figure}
  
-The fact that the number od contributors to the 'core' is still low can be a problem to guarantee the sustainability of the project in the future and must be taken into account.
+The fact that the number of contributors to the 'core' is still low can be a problem to guarantee the sustainability of the project in the future and must be taken into account.
 
-In terms of Longevity, jQuery is considered still a young project but taking into account that it is supported by its parent project jQuery\footnote{http://jquery.com/}  managed by the jQuery Foundation\cite{jQuery Foundation}  which is very active I think the future of the project is ensured.
+In terms of Longevity, jQuery is considered still a young project, but taking into account that it is supported by its parent project jQuery\footnote{http://jquery.com/}  managed by the jQuery Foundation\cite{jQuery Foundation} which is very active and I think the future of the project is ensured.
 
-In the \textbf{Professionalism} category the role of the jQuery Foundation is crucial for organizing conferences and workshops that promote the framework among its users community (next jQuery Conference to be held in June 2013\footnote{http://events.jquery.org/2013/portland/}).
+In the \textbf{Professionalism} category, the role of the jQuery Foundation is crucial for organizing conferences and workshops that promote the framework among its users community (the next jQuery Conference to be held in June 2013\footnote{http://events.jquery.org/2013/portland/}).
 
-Also the community around jQuery Mobile is very welcome to receive new contributors\footnote{http://forum.jquery.com/topic/how-can-i-contribute-to-jquery-mobile-core-development} which makes easier the process of participating in the project which is something I would really like to do.
+Also the community around jQuery Mobile is very welcome to receive new contributors\footnote{http://forum.jquery.com/topic/how-can-i-contribute-to-jquery-mobile-core-development} which makes the process of participating in the project easier which is something I would really like to do.
 
-Finally jQuery Mobile is licensed under a MIT license\footnote{http://opensource.org/licenses/MIT} which is perfect for KuDo project purposes, my idea is to integrate in jQuery Mobile other open source plugins and also implement on top of the framework my own developments.
+Finally jQuery Mobile is licensed under a MIT license\footnote{http://opensource.org/licenses/MIT} which is perfect for KuDo project purposes. My idea is to integrate in jQuery Mobile other open source plugins and also implement on top of the framework my own developments.
 
-Table below summarize using a SWOT analysis the advantages and disadvantages of jQuery Mobile after the OpenBRR analysis:
+The table below summarizes using a SWOT analysis, the advantages and disadvantages of jQuery Mobile after the OpenBRR analysis:
 
 \begin{center}
 \rowcolors{1}{}{}
@@ -669,35 +669,35 @@ The OpenBRR spreadsheet containing the metrics final scores and comments justify
 \url{
 https://github.com/eparrillae/eparrillae-mswl-thesis/blob/master/MasterThesis/thesis/OpenBRR_Templates/BRR_Template_SenchaTouch.ods}
 
-The final score for Sencha Touch is 3.723, which is a lower score than the one we got for jQuery Mobile, that means that this framework covers many of the needs required for the KuDo development project but it is not as complete as jQuery Mobile.
+The final score for Sencha Touch is 3.723, which is a lower score than the one we got for jQuery Mobile. That means that this framework covers many of the needs required for the KuDo development project but it is not as complete as jQuery Mobile.
 
-In the \textbf{Functionality} category we can see that most of the requirements are covered, the framework seems to be strong in areas like easy to install and use, compliance with HTML, CSS3 standards for the web, themes customization and availability of 3rd party plugins/extensions. 
+In the \textbf{Functionality} category, we can see that most of the requirements are covered. The framework seems to be strong in areas like easy to install and use, compliance with HTML, CSS3 standards for the web, themes customization and availability of 3rd party plugins/extensions. 
 
-Also the development environment which is a key part of the implementation process is fully covered, in the case of Sencha there is a dedicated plugin for Eclipse IDE\cite{sencha Eclipse Plugin}  which makes easier the development as this is the IDE I am used to use. Also Sencha Touch provides Sencha Architect\cite{sencha Architect} which is a tool that provides sketching and drag\&drop graphical desing features.
+Also the development environment which is a key part of the implementation process is fully covered. In the case of Sencha, there is a dedicated plugin for Eclipse IDE\cite{sencha Eclipse Plugin}  which makes easier the development as this is the IDE I am used to use. Also Sencha Touch provides Sencha Architect\cite{sencha Architect} which is a tool that provides sketching and drag\&drop graphical desing features.
 
 One important pitfall for Sencha Mobile is that it is focused on running well in Webkit\footnote{https://www.webkit.org/}  based web browsers, for that reason multiplatform support in Black Berry and Nokia devices is not guaranteed.
 
-Also the access to native features of the mobile device that has to be done through other tools like \footnote{http://phonegap.com/} which is teh same case we had in jQuery Mobile. 
+Also the access to native features of the mobile device that has to be done through other tools like PhoneGap\footnote{http://phonegap.com/} which is the same case we had in jQuery Mobile. 
 
-On the other hand, the support of some advances features like media audio/video and look\&feel stencils is fully supported in Sencha Mobile.
+On the other hand, the support of some advanced features like media audio/video and look\&feel stencils is fully supported in Sencha Mobile.
 
-Sencha Mobile supports by default a MVC architecture\cite{sencha MVC}  that makes easier the development of well-structured Mobile Apps.
+Sencha Mobile supports by default a MVC architecture\cite{sencha MVC}  that makes easier the development of well-structured mobile apps.
 
-In the \textbf{Usability} category we get similar scores that the ones for jQuery Mobile, we can see that the framework is easy to install and use.
+In the \textbf{Usability} category, we get similar scores that the ones for jQuery Mobile, we can see that the framework is easy to install and use.
 
-For measuring the \textbf{Quality} category metrics we have checked that in Ohloh we do not have specific information about Sencha Touch\cite{Ohloh Sencha Touch}, this is because the code repository of Sencha Touch is public, this is a big difference with jQuery Mobile where there is a GitHub project where we can check the source code improvements, bugs/enhancements raised and their status etc... This point is one of the reasons that have made Sencha Touch to be evaluated lower that jQuery Mobile in this category, without the repository it has been impossible to score the required metrics, for that reason those metrics have the lowest score possible.
+For measuring the \textbf{Quality} category metrics, we have checked that in Ohloh we do not have specific information about Sencha Touch\cite{Ohloh Sencha Touch}. This is because the code repository of Sencha Touch is not open to the public, this is a big difference with jQuery Mobile where there is a GitHub project where we can check the source code improvements, bugs/enhancements raised and their status etc... This point is one of the reasons that have made Sencha Touch to be evaluated lower that jQuery Mobile in this category. Without the repository it has been impossible to score the required metrics, for that reason those metrics have the lowest score possible.
 
 In terms of major releases Sencha Touch is in line with jQuery Mobile both are in the range of 1 to 3 major releases which means that the project is currently active, the latest release is from the 15th of April 2013 (v2.2.1) so we have a very recent version to be downloadable and installed. Here we have to say that Sencha Touch has delivered more stable releases than jQuery Mobile, therefore it seems that the number of companies/developers behind the project could be bigger than the jQuery Mobile community.
 
-In the \textbf{Security} category again we cannot check the number of critical bugs open in the Sencha Touch code and its status, therefore those metrics are scored with the lowest possible value. Like in jQuery Mobile, Sencha Touch does not have a dedicated package for security.
+In the \textbf{Security} category, again we cannot check the number of critical bugs open in the Sencha Touch code and its status. Therefore those metrics are scored with the lowest possible value. Like in jQuery Mobile, Sencha Touch does not have a dedicated package for security.
 
-In the \textbf{Performance} category there are differences with jQuery because Sencha does provide tools for benchmarking and testing our Mobile Apps and also provides formal performance comparisons\cite{sencha performance}. This is a strong point in favour of Sencha because jQuery Mobile does not provide anything on this regard.
+In the \textbf{Performance} category there are differences with jQuery because Sencha does provide tools for benchmarking and testing our mobile apps and also provides formal performance comparisons (see benchmarking results in \cite{sencha performance}). This is a strong point in favour of Sencha, because jQuery Mobile does not provide anything on this regard.
 
-In the \textbf{Scalability} category Sencha Touch is based on a pluggable architecture which is quite extensible and also the usage of standard design patterns is  provided by default\cite{sencha MVC} which is a difference with jQuery, so here the scores for the different metrics are the highest possible.
+In the \textbf{Scalability} category, Sencha Touch is based on a pluggable architecture which is quite extensible and also the usage of standard design patterns is  provided by default (see usage of MVC \cite{sencha MVC}) which is a difference with jQuery. So here the scores for the different metrics are the highest possible.
 
-In the \textbf{Architecture} category we see that there are wide range of 3rd party plugins and extensions\cite{sencha Try} available which is quite importante for the KuDo project, some of those resources are related with the presentation layer of the applications and others with the support for plugins to connect backend services such as databases, web services etc... here we have another difference with jQuery that does not provide such wide range of solutions.
+In the \textbf{Architecture} category, we see that there is a wide range of 3rd party plugins and extensions (see Sencha Try site \cite{sencha Try}) available which is quite importante for the KuDo project, some of those resources are related with the presentation layer of the applications and others with the support for plugins to connect backend services such as databases, web services, etc.. Here we have another difference with jQuery that does not provide such wide range of solutions.
 
-In terms of programming languages figure below shows the results of executing sloccount\footnote{http://www.dwheeler.com/sloccount/} over the latest version of Sencha Touch downloaded from its web site\footnote{http://www.sencha.com/products/touch/download/sencha-touch-2.2.1/2283} :
+In terms of programming languages, the figure below shows the results of executing SLOC\footnote{http://www.dwheeler.com/sloccount/} over the latest version of Sencha Touch downloaded from its web site\footnote{http://www.sencha.com/products/touch/download/sencha-touch-2.2.1/2283} :
 
 \begin{figure}[H]
     \centering
@@ -706,23 +706,23 @@ In terms of programming languages figure below shows the results of executing sl
     \label{figure:jquerylanguages}
  \end{figure}
 
-We see that most of the code is done using PHP and XML but also there is some code in Ruby and shell scripts, which means that for implementing Mobile Apps using this framework requires knowledge in those languages, this is good for me as I have used them extensively in the past.
+We see that most of the code is done using PHP and XML, but also there is some code in Ruby and shell scripts, which means that for implementing mobile apps using this framework requires knowledge in those languages. This is good for me as I have used them extensively in the past.
 
-In the \textbf{Support} category we can clearly see that the mailing lists work very well and also it is possible to have professional support\cite{sencha support}  which is a missing capability in jQuery Mobile, so for this category Sencha is better than jQuery.
+In the \textbf{Support} category, we can clearly see that the mailing lists work very well and also it is possible to have professional support (see professional support \cite{sencha support}) which is a missing capability in jQuery Mobile. So for this category Sencha is better than jQuery.
 
-Regarding \textbf{Documentation} category I have to say that the project is really well-documented, there are lots of books about jQuery Mobile and the web site contains all necessary resources for both developers without experience and advanced ones, in this category all scores are high. This applies also for \textbf{Adoption} category, there are many real-world examples of Mobile Apps developed using jQuery Mobile framework.
+Regarding \textbf{Documentation} category, I have to say that the project is really well-documented. There are lots of books about Sencha Touch and the web site contains all necessary resources for both developers without experience and advanced ones, in this category all scores are high. This applies also for \textbf{Adoption} category, there are many real-world examples of mobile apps developed using Sencha Touch framework.
 
-In the \textbf{Community} category we see that average volume of messages in the mailing lists in the last six months is high, unfortunately the number of commits in the last month and the number of contributors in this period cannot be checked, as we said before, there is no public access to Sencha Touch code repository. 
+In the \textbf{Community} category, we see that average volume of messages in the mailing lists in the last six months is high. Unfortunately the number of commits in the last month and the number of contributors in this period cannot be checked, as we said before, there is no public access to Sencha Touch code repository. 
 
-In terms of Longevity, Sencha Touch is considered still a young project but taking into account that it is supported by its parent project Sencha\footnote{http://sencha.com/}  managed by a private company\footnote{http://www.sencha.com/company/}  which has several private partners I think the future of the project is ensured.
+In terms of Longevity, Sencha Touch is considered still a young project but taking into account that it is supported by its parent project Sencha\footnote{http://sencha.com/}, managed by a private company\footnote{http://www.sencha.com/company/}  which has several private partners, I think the future of the project is ensured.
 
-In the \textbf{Professionalism} category we can see that there is a dedicated conference for Sencha users\cite{sencha Conferences} that promotes the framework among its users  (next Sencha Conference to be held in June 2013\footnote{http://senchacon.com/rockstar-promotion/}).
+In the \textbf{Professionalism} category, we can see that there is a dedicated conference for Sencha users\cite{sencha Conferences} that promotes the framework among its users  (next Sencha Conference to be held in June 2013\footnote{http://senchacon.com/rockstar-promotion/}).
 
-A big difference is that there is no way to contribute to Sencha Touch in the same way it is done in jQuery, i.e., contacting directly with its community and join them, I consider this another important pitfall, the only information I have found related to developers is in the support pages, see\cite{sencha devs}.  
+A big difference is that there is no way to contribute to Sencha Touch in the same way it is done in jQuery, i.e., contacting directly with its community and join them, I consider this another important pitfall. The only information I have found related to developers is in the support pages, see Sencha Devs\cite{sencha Devs}.  
 
-Finally jQuery Mobile is licensed using a dual licensing schema\footnote{http://www.oss-watch.ac.uk/resources/duallicence2}  with a commercial license and an Open Source GPLv3 license \footnote{http://gplv3.fsf.org/}. For the KuDo project I was thinking about using a weak-copyleft license like MIT, BSD, APL, EPL etc... this is because my idea is to integrate several tools within my own development and in some cases GPL does not allow me to do so. 
+Finally jQuery Mobile is licensed using a dual licensing schema\footnote{http://www.oss-watch.ac.uk/resources/duallicence2}  with a commercial license and an Open Source GPLv3 license\footnote{http://gplv3.fsf.org/}. For the KuDo project I was thinking about using a weak-copyleft/permissive license like MIT\footnote{http://opensource.org/licenses/MIT}, BSD\footnote{http://opensource.org/licenses/BSD-3-Clause}, APL\footnote{https://www.apache.org/licenses/LICENSE-2.0.html} , EPL\footnote{http://www.eclipse.org/legal/epl-v10.html}, etc.. This is because my idea is to integrate several tools within my own development and in some cases GPL does not allow me to do so. 
 
-Table below summarize using a SWOT analysis the advantages and disadvantages of Sencha Touch after the OpenBRR analysis:
+The table below summarize using a SWOT analysis the advantages and disadvantages of Sencha Touch after the OpenBRR analysis:
 
 \begin{center}
 \rowcolors{1}{}{}
@@ -757,19 +757,19 @@ Table below summarize using a SWOT analysis the advantages and disadvantages of 
 \chapter{Conclusions}
 \label{chap:conclusions}
 
-In this trade-off study I have used OpenBRR as QA methodology, I have to say that I believe this methodology covers most of the main aspects of a given project in terms of functionality, usability, scalability etc... also the fact of having templates that automate the calculation of the overall score for each solution is really useful, so I think for me it is a very good way to start evaluating a given solution for my KuDo project.
+In this trade-off study, I have used OpenBRR as Quality Assurance (QA) methodology. I have to say that I believe this methodology covers most of the main aspects of a given project in terms of functionality, usability, scalability, etc.. Also the fact of having templates that automate the calculation of the overall score for each solution is really useful, so I think for me it is a very good way to start evaluating a given solution for my KuDo project.
 
 While evaluating the metrics I saw that there were some analysis aspects that were out of the scope of OpenBRR templates and it was necessary to introduce new metrics to complete the study, specially to provide a "community oriented" point of view.
 
-In the Overview section of this study I have explained the goals of the KuDo project, the idea is to setup a start-up focused in the development of web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets etc...
+In the Overview section of this study I have explained the goals of the KuDo project, the idea is to setup a start-up focused in the development of web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets, etc..
 
-During this trade-off I have discovered that jQuery Mobile has the simpler code using a relatively small object model that allows you re-use already existing html code, which makes it faster and easier to learn. Sencha has a large object model, which provides more features out of the box (DOM manipulation, CRUD Operations, access to SOAP/REST web services etc...), but takes longer to learn.
+During this trade-off I have discovered that jQuery Mobile has the simpler code using a relatively small object model that allows you re-use already existing HTML code, which makes it faster and easier to learn. Sencha has a large object model, which provides more features out of the box (DOM manipulation, CRUD Operations, access to SOAP/REST web services etc...), but takes longer to learn.
 
-There is no established architecture, jQuery Mobile is Layout based and this allows you the freedom to do whatever you want. It is true that it extensively uses Javascript and HTML but for me is a challenge to improve my knowledge in those fields. Also it easier to integrate with other frameworks, targets more devices than Sencha Touch (Sencha Touch is in a bit of a bind having tied themselves to WebKit) and it is not tied to a particular vendor.
+There is no established architecture, jQuery Mobile is layout-based and this allows you the freedom to do whatever you want. It is true that it extensively uses Javascript and HTML but for me is a challenge to improve my knowledge in those fields. Also it is easier to integrate with other frameworks, targets more devices than Sencha Touch (Sencha Touch is in a bit of a bind having tied themselves to WebKit) and it is not tied to a particular vendor.
 
-Moreover it is licensed under a MIT weak copyleft license which is perfect for my KuDo project. Clearly Sencha Touch bussiness model is quite different from jQuery Mobile in the case of Sencha there is a clear objective of monetization of their products (pretty closed right now a commercial entity controls it) for that reason they take care of professional support, implementation of comercial tools for development with Secncha etc... but for me this is not relevant as I am an experienced developer and do not need that kind of support, what I am expecting from the selected solution is to have a strong Open Source community behind in which I can aalso get involved at some point.
+Moreover it is licensed under a MIT weak copyleft license which is perfect for my KuDo project. Clearly Sencha Touch bussiness model is quite different from jQuery Mobile in the case of Sencha there is a clear objective of monetization of their products (closed development process right now and a commercial entity controls it, not an Open Source foundation). For that reason they take care of professional support, implementation of comercial tools for development with Secncha, etc.. But for me this is not relevant as I am an experienced developer and do not need that kind of support. What I am expecting from the selected solution is to have a strong Open Source community behind in which I can also get involved at some point.
 
-As a final conclusion I would say that iif you intend to design business-friendly web apps then probably Sencha is the right option but if your goal is to create a market-friendly apps (like the ones within KuDo project) in a quick time, then you may choose to go with jQuery Mobile.
+As a final conclusion, I would say that if you intend to design business-friendly web apps then probably Sencha is the right option but if your goal is to create a market-friendly apps (like the ones within KuDo project) in a quick time, then you may choose to go with jQuery Mobile.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -780,7 +780,7 @@ Beginning this year I started working on a new personal project that I called 'K
 
 The first step I took was to define the activity I would like to perform in the start-up  and give it a name, for me it was clear that the new project should be focused in software development and after some "brainstorming" I saw some niche of opportunitties in the educational field and therefore decided to focus the activity in providing lightweight web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets etc... the name "KuDo" was also part of that brainstorming activity :-)
 
-The second step was to look in the market which frameworks were available for Mobile Apps development, if it was better to go for a native, an hybrid or a web-based solution, and after selecting which approach was better then perform a deep trade-off to be able to take one of these frameworks as baseline solution for my own implementations. This has been the aim of this Master Thesis, during this process I have learnt a lot in terms of web-based technologies, mobile apps and QA metrics.
+The second step was to look in the market which frameworks were available for mobile apps development, if it was better to go for a native, an hybrid or a web-based solution, and after selecting which approach was better then perform a deep trade-off to be able to take one of these frameworks as baseline solution for my own implementations. This has been the aim of this Master Thesis, during this process I have learnt a lot in terms of web-based technologies, mobile apps and QA metrics.
 
 And now what? Well, as part of the future work on the KuDo project I am planning the following activities:
 
