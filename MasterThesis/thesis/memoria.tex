@@ -204,7 +204,7 @@ The objectives of this Master Thesis were defined and agreed with my tutors and 
 \section{Possible candidates}
 \label{sec:candidates}
  
-There are many web-based frameworks for developing mobile apps nowadays, the first step I performed in this study was to take a deep look in the Internet at the available solutions and select a subset of them that fulfills the requirements of the KuDo project. 
+There are many web-based frameworks for developing mobile apps nowadays, the first step I performed in this study was to take a deep look in the Internet at the available solutions and select a subset of them that fulfills the requirements of the KuDo project. In the following sections a present a brief overview of the most interesting solutions I have found.
  
 \subsection{Appspresso}
 \label{Appspresso} 
@@ -217,7 +217,7 @@ Appspresso is the only mobile framework that supports the device API of WAC (Who
 
 Appspresso provides an integrated development environment for Eclipse to develop apps using Appspresso Studio environment regardless of the target mobile platform. With one click of a mouse, iOS and Android apps can be built and WAC apps can be packaged. One of the best things about Appspresso studio, is the possibility to use “on the fly building” function which immediately reflects revised source code without recompiling. Thus improves the development productivity by eliminating the need for rebuilding source code and transferring app to a test mobile or an emulator. 
 
-Appspresso PDK (Plug-in Development Kit) allows developers to use native language to create user-defined functions and expose them through JavaScript API. Waikiki API that is built into Appspresso was also developed using Appspresso PDK. Appspresso runtime provides a plug-in architecture for supporting custom plug-ins and Appspresso Studio includes a PDK necessary for those plug-in developments.
+Appspresso PDK (Plug-in Development Kit)\footnote{http://appspresso.com/developer/plug-in}   allows developers to use native language to create user-defined functions and expose them through JavaScript API. Waikiki API that is built into Appspresso was also developed using Appspresso PDK. Appspresso runtime provides a plug-in architecture for supporting custom plug-ins and Appspresso Studio includes a PDK necessary for those plug-in developments.
 
 Figure below shows how a simple "Hello World" application would look like:
 
@@ -232,7 +232,11 @@ Appspresso code is maintained using a GitHub repository\footnote{https://github.
 \subsection{Sencha Touch}
 \label{Sencha Touch}
 
- % TODO
+Sencha Touch\footnote{http://www.sencha.com/products/touch}, a high-performance HTML5 mobile application framework, is the cornerstone of the Sencha HTML5 platform. Built for enabling world-class user experiences, Sencha Touch is the only framework that enables developers to build powerful apps that work on iOS, Android, BlackBerry, Windows Phone, and more.
+
+Sencha Touch 2.2 is the latest version that adds support for BlackBerry 10, Internet Explorer 10, and adds the lightning fast new list and the all-new AnimationQueue features to let developers achieve unparalleled performance. Sencha Touch also provides enhanced native support through the Sencha Mobile Packager, which is integrated into the free Sencha Cmd\footnote{http://www.sencha.com/products/sencha-cmd/download} . 
+
+The product is available through a dual licensing schema, providing commercial and GPLv3\footnote{http://gplv3.fsf.org/}  versions. 
 
 \subsection{Appcelerator Titanium}
 \label{Appcelerator Titanium} 
@@ -292,6 +296,12 @@ MoSync JDK is licensed under a GPL v2.0\footnote{https://www.gnu.org/licenses/gp
 \subsection{jQuery Mobile}
 \label{jQuery Mobile}
 
+This framework provides a unified, HTML5-based, Touch-Optimized Web Framework for Smartphones and Tablets, user interface system for all popular mobile device platforms, built on the rock-solid jQuery and jQuery UI foundation. Its lightweight code is built with progressive enhancement, and has a flexible, easily themeable design.
+
+jQuery Mobile\footnote{http://jquerymobile.com/}  framework takes the "write less, do more" mantra to the next level: Instead of writing unique apps for each mobile device or OS, the jQuery mobile framework allows you to design a single highly-branded web site or application that will work on all popular smartphone, tablet, and desktop platforms.
+
+The project code is available in the corresponding GitHub repository\footnote{https://github.com/jquery/jquery-mobile} and it is released under a MIT license\footnote{http://opensource.org/licenses/MIT} .
+
 \subsection{Cordova}
 \label{Cordova} 
 
@@ -331,13 +341,11 @@ The project is hosted by the Dojo Foundation\footnote{http://dojofoundation.org/
 
 \section{Selected frameworks}
 \label{sec:selected}
-Taking this list as a baseline then
+Taking this list as a baseline I have selected jQuery Mobile and Sencha Touch to be the solutions that I am going to analyze using Open BRR methodology because I consider are the most complete ones for my purposes in the context of the KuDo project.
 
-
-
+In the next sections I explain how I have applied the Open BRR metrics and the detailed results I have got during this trade-off study.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \chapter{OpenBRR Analysis}
 \label{chap:openbrr}
