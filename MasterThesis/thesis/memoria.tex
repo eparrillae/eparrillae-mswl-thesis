@@ -254,17 +254,55 @@ At the Titanium web site, we can discover a large number of references and docum
 \subsection{IPFaces}
 \label{IPFaces} 
 
+IPFaces\footnote{http://www.ipfaces.org/} is a framework for simple creation of native, form-oriented network applications for mobile devices. The aim of the solution is to screen the programmer completely out from the mobile platform itself, and transfer the entire application logic to central application server level.
+
+Each iPFaces application consists of two main parts: Thin iPFaces client for mobile devices and the server part with application logic and definition of iPFaces views, that basically  is a standard web module. iPFaces provides libraries for easy definition of iPFaces forms for the presentation layer of the application for all supported server platforms (ASP.Net, Java and PHP). The architecture and design logic are not limited in any manner and you may use your usual and tested procedures. 
+
+Figure shows how is the interaction between both sides, generating simple GET/POST requests from the server side by returning iPFaces forms definition in XML format.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=8cm, keepaspectratio]{img/ipfaces.png}
+    \caption{\textit{iPFaces Client/Server interaction}}
+ \end{figure}
+
+To programming an application for  cross mobile devices with IPFaces, knowledge of specific mobile device platform is not required.  All that we need,  is to install the general iPFaces client to the mobile device in the standard way and file the address of your iPFaces server upon its first launch. The iPFaces client is supplied for free for various mobile platforms as a standard part of the entire solution.
+
+The server part of the iPFaces technology is fully opened, both for non-commercial and commercial use under a BSD licence\footnote{http://opensource.org/licenses/BSD-3-Clause}, more information can be found in the developers site\footnote{http://sourceforge.net/projects/ipfaces/files/1.3/} .
+
 \subsection{MoSync}
 \label{MoSync} 
+
+The MoSync\footnote{http://www.mosync.com/}  is an open-source SDK rich environment that make easy to develop cross-platform mobile application for all major mobile platforms from a single code base. The SDK enables mobile developers to build and compile apps for up to nine different platforms at once, using C/C++ or HTML5/JavaScript, or a combination of both to create hybrid apps.
+
+With the MoSync SDK\footnote{http://www.mosync.com/docs/sdk/index.html}  it is possible to build applications with HTML5, JavaScript, and CSS without needing to write a single line of C/C++ code. Also, we can build hybrid apps that use HTML5/JavaScript for the user interface and C/C++ for the heavy lifting. 
+
+The MoSync IDE is based on Eclipse, although there have made several modification in order to make it a great tool for cross-platform mobile application development,  and added  some unique MoSync features. The IDE lets you edit both HTML5/JavaScript (great for defining user interfaces) and C/C++ (ideal for any heavy lifting your app needs to do).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm, keepaspectratio]{img/mosync.png}
+    \caption{\textit{MoSync IDE based on Eclipse}}
+ \end{figure}
+ 
+Also, the MoSync IDE provides a default emulator called  “MoRE”. MoRE is a  virtual machine that directly executes MoSync bytecode and  it allow us to emulate most devices in MoSync's device/platform, including  multitouch emulation. Of course, we can also use native emulators from the IDE, like the Android Emulator and iPhone/iOS Simulator, and run the application in those too.
+
+MoSync JDK is licensed under a GPL v2.0\footnote{https://www.gnu.org/licenses/gpl-2.0.html}  license, the code is available in the corresponding GitHGub repository\footnote{https://github.com/MoSync/MoSync}  and more information can be found in the project developers web site\footnote{http://www.mosync.com/docs/index.html} .
 
 \subsection{jQuery Mobile}
 \label{jQuery Mobile}
 
-\subsection{Canappi}
-\label{Canappi} 
-
 \subsection{Cordova}
 \label{Cordova} 
+
+Apache Cordova\footnote{https://cordova.apache.org/} is a set of device APIs that allow a mobile app developer to access native device function such as the camera or accelerometer from JavaScript. Also, combined with a UI framework such as jQuery Mobile or Dojo Mobile or Sencha Touch, this allows a smartphone app to be developed with just HTML, CSS, and JavaScript.
+
+When using the Cordova APIs, an app can be built without any native code (Java, Objective-C, etc) from the app developer. Instead, web technologies are used, and they are hosted in the app itself locally (generally not on a remote http server). And because these JavaScript APIs are consistent across multiple device platforms and built on web standards, the app should be portable to other device platforms with minimal to no changes.
+Apps using Cordova are still packaged as apps using the platform SDKs, and can be made available for installation from each device's app store.
+
+Cordova provides a set of uniform JavaScript libraries that can be invoked, with device-specific native backing code for those JavaScript libraries. Cordova is available for the following platforms: iOS, Android, Blackberry, Windows Phone, Palm WebOS, Bada, and Symbian.
+
+Apache Cordova graduated in October 2012 as a top level project within the Apache Software Foundation (ASF). Through the ASF, future Cordova development will ensure open stewardship of the project. The project is licensed using the Apache Public License (APL) 2.0\footnote{https://www.apache.org/licenses/LICENSE-2.0.html} , more information can be found in the project contributors web site\footnote{https://cordova.apache.org/\#contribute} .
 
 \subsection{Dojo Mobile}
 \label{Dojo Mobile} 
