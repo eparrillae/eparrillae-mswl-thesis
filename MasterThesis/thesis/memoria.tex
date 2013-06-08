@@ -144,8 +144,9 @@ Nowadays mobile devices such as smartphones and tablets have become the preferre
 Mobile apps can be grouped in two categories\footnote{http://www.bbconsult.co.uk/Mobile-Web-Software-Development.aspx} :
 
 \begin{itemize}
- \item \textbf{Native/Hybrid Apps}: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly in the device. Users typically acquire these apps through an online store or marketplace such as The Apple Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
+ \item \textbf{Native Apps}: A native app is an app for a certain mobile device (smartphone, tablet, etc.) They are installed directly in the device. Users typically acquire these apps through an online store or marketplace such as The Apple Store\footnote{https://www.apple.com/iphone/from-the-app-store/} or Android Apps on Google Play\footnote{https://play.google.com/store/apps} .
  \item \textbf{Web-based Apps}: When we talk about mobile web apps we are referring to Internet-enabled apps (compliant with HTML5\footnote{http://www.w3.org/html/wg/drafts/html/master/} , CSS3\footnote{http://www.w3.org/TR/CSS/} and Javascript\footnote{http://www.w3.org/standards/webdesign/script.html}  standards) that allow web developers to quickly and easily create mobile apps that work on Android, iOS and BlackBerry devices, and produce a native-app-like experience inside a browser. 
+ \item \textbf{Hybrid Apps}: An application in which some or all of your UI and business logic is written in HTML, CSS, and JavaScript running within a "native wrapper" such as a Titanium WebView\footnote{http://www.titaniumtutorial.com/2012/03/webview-in-appcelerator-titanium.html} or PhoneGap\footnote{http://phonegap.com/} container. Hybrid apps have limited access to the device hardware, though such access varies by mobile operating system and development framework. Hybrid apps offer app store distribution and operation without a live network connection.
 \end{itemize}
 
 For the KuDo project I had to decide which type of mobile apps I would develop, the table below summarizes using a SWOT\footnote{https://en.wikipedia.org/wiki/SWOT\_analysis} analysis the advantages and disadvantages of Native Apps:
@@ -174,7 +175,7 @@ To help me decide which type of solution I should take for my KuDo project I ask
  \item \textbf{How will this app be monetized effectively?} I have some experience in setting up Paypal\footnote{https://www.paypal.com/es/webapps/mpp/home}  systems but I would need some help with this issue; Again, this is an interesting challenge for me.
 \end{itemize}
 
-Summarizing, due to the type of developments I am planing to do I think the Web-based Apps solutions are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting challenge that shall improve my professional background.
+Summarizing, due to the type of developments I am planing to do I think the Web-based Apps solutions (pure web-based or hybrid web-based) are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting challenge that shall improve my professional background.
 
 In this Master Thesis I am doing the exercise of performing a deep search in the existing FLOSS Web-based App frameworks for mobile devices, selecting a couple of the most popular ones and then comparing their capabilities using a well-formed quality system like OpenBRR.
 
@@ -197,8 +198,69 @@ The objectives of this Master Thesis were defined and agreed with my tutors and 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Selected Frameworks}
+\chapter{A first look at the available frameworks}
 \label{chap:overview}
+
+\section{Possible candidates}
+\label{sec:candidates}
+ 
+There are many web-based frameworks for developing mobile apps nowadays, the first step I performed in this study was to take a deep look in the Internet at the available solutions and select a subset of them that fulfills the requirements of the KuDo project. 
+ 
+\subsection{Appspresso}
+\label{Appspresso} 
+ 
+Appspresso\footnote{http://appspresso.com/}  is a hybrid cross-platform mobile framework which wraps source code developed with web technology by each mobile platform runtime and builds them into native mobile apps. Developers can build Apple iOS apps, Google Android apps. Moreover, Appspresso plans in the close future, to support Microsoft Windows Phone, RIM BlackBerry, and Samsung Bada. 
+
+Using only the standard web technologies such as HTML, CSS, and JavaScript, development is easily done  and the existing web-based contents can easily be migrated to apps.
+
+Appspresso is the only mobile framework that supports the device API of WAC (Wholesale Application Community) called Waikiki API\footnote{http://appspresso.com/api-reference}. Waikiki API is a JavaScript API that allows utilization of local resources such as camera, contacts, accelerometer, device status, file system, and etc. The current version Appspresso 1.0 RC supports the Waikiki API 2.0 beta.
+
+Appspresso provides an integrated development environment for Eclipse to develop apps using Appspresso Studio environment regardless of the target mobile platform. With one click of a mouse, iOS and Android apps can be built and WAC apps can be packaged. One of the best things about Appspresso studio, is the possibility to use “on the fly building” function which immediately reflects revised source code without recompiling. Thus improves the development productivity by eliminating the need for rebuilding source code and transferring app to a test mobile or an emulator. 
+
+Appspresso PDK (Plug-in Development Kit) allows developers to use native language to create user-defined functions and expose them through JavaScript API. Waikiki API that is built into Appspresso was also developed using Appspresso PDK. Appspresso runtime provides a plug-in architecture for supporting custom plug-ins and Appspresso Studio includes a PDK necessary for those plug-in developments.
+
+Figure below shows how a simple "Hello World" application would look like:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5cm, keepaspectratio]{img/appspresso.png}
+    \caption{\textit{Appspresso Hello World example}}
+ \end{figure}
+ 
+Appspresso code is maintained using a GitHub repository\footnote{https://github.com/kthcorp/Appspresso-SDK} and it is licensed using a MIT License\footnote{http://opensource.org/licenses/MIT} .
+ 
+\subsection{Application Craft}
+\label{Application Craft} 
+
+\subsection{Sencha Touch}
+\label{Sencha Touch} 
+
+\subsection{Appcelerator Titanium}
+\label{Appcelerator Titanium} 
+
+\subsection{IPFaces}
+\label{IPFaces} 
+
+\subsection{MoSync}
+\label{MoSync} 
+
+\subsection{jQuery Mobile}
+\label{jQuery Mobile}
+
+\subsection{Canappi}
+\label{Canappi} 
+
+\subsection{Cordova}
+\label{Cordova} 
+
+\subsection{Dojo Mobile}
+\label{Dojo Mobile} 
+
+\section{Selected frameworks}
+\label{sec:selected}
+Taking this list as a baseline then
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
