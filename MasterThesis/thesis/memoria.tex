@@ -26,6 +26,9 @@
 \usepackage{latexsym}  %% For additional characters
 \usepackage{rotating}
 \usepackage[table]{xcolor}
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small}
+\DefineVerbatimEnvironment{example}{Verbatim}{fontsize=\small}
 
 \title {Trade-Off Analysis of Open Source Web Mobile App Frameworks: The KuDo Project}
 \author{Esther Parrilla-Endrino (eparrillae@gmail.com)\\
@@ -850,15 +853,76 @@ As a final thougth, now with the crisis which unfortunately is affecting profess
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Apendix A: jQuery Mobile "Hello World" Prototype}
-\label{Apendix A: jQuery Mobile "Hello World" Prototype}
+\chapter{Apendix A: Sencha Touch "Hello World" example}
+\label{Apendix A: Sencha Touch "Hello World" example}
+
+The first step for implementing Sencha Touch "Hello World" example is to download\footnote{http://www.sencha.com/products/touch/download/} the Open Source version (GNU GPL license v3) of the framework to our local computer, in our example we have used the latest stable version (2.2.1). Once the download is finished, we have to unzip the file "sencha-touch-2.2.1-gpl.zip" and within we shall find a setup file with instructions for the installation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/sencha1.png}
+    \caption{\textit{Sencha Touch Download page}}
+ \end{figure}
+
+Sencha Touch is composed of two main components: Sencha Touch SDK\footnote{http://www.sencha.com/products/sdk-tools} which contains all framework baseline classes and Sencha CMD\footnote{http://www.sencha.com/blog/all-new-sencha-cmd/} which is the tool used for building applications. Before installing these two components it is necessary to install the following 3rd-party tools:
+
+\begin{itemize}
+ \item Java Runtime Environment version 1.7\footnote{http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html}, version 1.6 also works, but 1.7 is better in terms of performances.
+ \item Ruby version 1.9.3\footnote{http://www.ruby-lang.org/en/downloads/} .
+ \item A proper HTTP server with PHP support like Apache\footnote{https://httpd.apache.org/}.
+\end{itemize}
+
+First we unzip the Sencha CMD zipped file in our local file system and second we unzip the Sencha SDK within the HTTP server deployment folder, in the case of Apache under the 'htdocs' folder. Once we have the two components deployed we run Sencha CMD server executing the following command on a terminal:
+
+\begin{code}
+sencha fs web -port 8000 start -map dir_name
+\end{code}
+
+Where "dir\_name" is the path to Sencha CMD server root folder, which is accesible in the following url:
+
+\url{http://localhost:8000/dir\_name}
+
+Now we are ready to generate the skeleton of our KuDo example project, for doing that we just have to run the following command on a terminal using Sencha SDK installation in Apache:
+
+\begin{code}
+sencha generate app kudo ../kudo
+[INFO] Created file ...
+\end{code}
+
+A new folder called 'kudo' is created under Apache 'htdocs' repository, this folder contains a default skeleton with all necessary Javascript, HTML, CSS files for our example. What I have done is to take that as a baseline and then update slightly the layout and style of the 'Main.js' and '/resources/css/app.css' sample files to produce the KuDo example. 
+
+For implementing those changes I have imported my Sencha Touch project within Eclipse IDE, first I have installed Eclipse Indigo (v3.7.2)\footnote{1. http://www.eclipse.org/downloads/packages/release/indigo/sr2} in my laptop and then installed Sencha 2.0 Eclipse plugin\footnote{http://www.sencha.com/blog/sencha-eclipse-plugin-2-0-new-and-noteworthy/} that includes support for Sencha Touch 2.2.1 using Eclipse Updater\footnote{http://www.sencha.com/blog/sencha-eclipse-plugin-tips-tricks/}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/sencha2.png}
+    \caption{\textit{Sencha Touch Eclipse Plugin installation}}
+ \end{figure}
+
+Once the environment is setup I have imported my project and all its Sencha SDK dependencies, figure below shows how the project is displayed within Eclipse, code sytntax highlighting and auto-completion are some of the advantages of using Eclipse for coding our example:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/sencha3.png}
+    \caption{\textit{Sencha Touch KuDo project in Eclipse}}
+ \end{figure}
+ 
+We can run the example within Eclipse embedded HTTP server or deploy it in our Apache server directly, the results is shown in figure below and there example can be accessed online in the following url of my blog:\\ \url{http://eparrillae.net/kudo/sencha/}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/sencha4.png}
+    \caption{\textit{Sencha Touch KuDo project example}}
+ \end{figure}
+
+\chapter{Apendix B: jQuery Mobile "Hello World" example}
+\label{Apendix B: jQuery Mobile "Hello World" example}
 
 
 
-\chapter{Apendix B: Sencha Touch "Hello World" Prototype}
-\label{Apendix B: Sencha Touch "Hello World" Prototype}
 
-% pantallazos sobre instalación y proyecto Sencha Touch
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{25}
