@@ -907,7 +907,9 @@ Once the environment is setup I have imported my project and all its Sencha SDK 
     \caption{\textit{Sencha Touch KuDo project in Eclipse}}
  \end{figure}
  
-We can run the example within Eclipse embedded HTTP server or deploy it in our Apache server directly, the results is shown in figure below and there example can be accessed online in the following url of my blog:\\ \url{http://eparrillae.net/kudo/sencha/}
+We can run the example within Eclipse embedded HTTP server or deploy it in our Apache server directly, the results is shown in figure below and there example can be accessed online in the following url of my blog:\\ 
+
+\url{http://eparrillae.net/kudo/sencha/}
 
 \begin{figure}[H]
     \centering
@@ -918,11 +920,53 @@ We can run the example within Eclipse embedded HTTP server or deploy it in our A
 \chapter{Apendix B: jQuery Mobile "Hello World" example}
 \label{Apendix B: jQuery Mobile "Hello World" example}
 
+For jQuery Mobile the process I have followed was similar to the one in Sencha Touch example, first I downloaded the latest stable version of jQuery Mobile framework (v1.3.1 compatible with jQuery 1.9)\footnote{http://jquerymobile.com/blog/2013/04/10/announcing-jquery-mobile-1-3-1/}.
 
+The framework can be deployed directly in our Apache HTTP server and the demos can be accessed in the following url:\\
 
+\url{http://localhost:10088/jquery.mobile-1.3.1/demos/}
 
+For developing the KuDo example, I took as a baseline one of the existing sample projects that comes with jQuery framework, figure below shows the default code I took:
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/jquery1.png}
+    \caption{\textit{jQuery Mobile default sample project code}}
+ \end{figure}
+ 
+For performing the updates I have also used Eclipse IDE with JDST (Eclipse JavaScript Development Tools) plugin\footnote{http://marketplace.eclipse.org/content/jsdt-jquery\#.Ubl2Sfk26-x} that adds jQuery autocompletion support. To import the Kudo sample default project it is necessary to create a new Javascript project as shown in figure below:
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/jquery3.png}
+    \caption{\textit{jQuery Mobile Eclipse project creation}}
+ \end{figure}
+
+After that, the necessary dependencies must be configured:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/jquery4.png}
+    \caption{\textit{jQuery Mobile Eclipse project dependencies configuration}}
+ \end{figure}
+
+Within the default sample code I introduced two separate pages one for Home and other for Info, as it is in the Sencha sample, working with pages markup and navbar widget\footnote{http://api.jquerymobile.com/category/widgets/}, also the look\&feel of the sample was updated accordingly using 'Themeroller' tool\footnote{http://jquerymobile.com/themeroller/} to make it similar to the Sencha sample. Figure below shows the updated code for jQuery Mobile:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/jquery2.png}
+    \caption{\textit{jQuery Mobile example updated}}
+ \end{figure}
+
+We can run the example within Eclipse embedded HTTP server or deploy it in our Apache server directly, the result is shown in figure below and the example can be accessed online in the following url of my blog:\\ 
+
+\url{http://eparrillae.net/kudo/jquerymobile/}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm, keepaspectratio]{img/jquery5.png}
+    \caption{\textit{jQuery Mobile KuDo project example}}
+ \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{25}
