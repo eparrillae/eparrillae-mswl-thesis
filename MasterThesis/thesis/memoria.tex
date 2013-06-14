@@ -113,13 +113,13 @@ California, 94105, USA.\\
 \chapter*{Summary}
 \label{chap:summary}
 
-In my daily work I play the role of Technical Manager who coordinates the development of both standalone and web solutions for the Aerospace field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
+In my daily work I play the role of Technical Manager who coordinates the development of both standalone and web solutions for the Aerospace software development field, therefore I have no possibility of working in projects related to mobile apps implementation which is one of the most interesting activity nowadays.
 
 Beginning this year I have started working on a personal project called 'KuDo', the idea is to setup a start-up focused in the development of web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets etc...
 
 This Master Thesis is the baseline activity I have performed for the KuDo project in order to determine which technical solution could fit better for this purpose from the wide range of web mobile app frameworks existing nowadays.
 
-All paper work done for this Master Thesis is Open Source material licensed under a Creative Commons Attribution 3.0 License\footnote{http://creativecommons.org/licenses/by/3.0/} and the code of the prototypes implemented in the context of this thesis is under MIT License\footnote{http://opensource.org/licenses/MIT}.
+All paper work done for this Master Thesis is Open Source material licensed under a Creative Commons Attribution 3.0 License\footnote{http://creativecommons.org/licenses/by/3.0/} and the code of the sample prototypes implemented in the context of this thesis is under a MIT License\footnote{http://opensource.org/licenses/MIT}.
 
 All these activities have been developed using GitHub repository and can be downloaded from the following url:
 
@@ -150,18 +150,22 @@ Mobile apps can be grouped in two categories\footnote{http://www.bbconsult.co.uk
  \item \textbf{Hybrid Apps}: An application in which some or all of your UI and business logic is written in HTML, CSS, and JavaScript running within a "native wrapper" such as a Titanium WebView\footnote{http://www.titaniumtutorial.com/2012/03/webview-in-appcelerator-titanium.html} or PhoneGap\footnote{http://phonegap.com/} container. Hybrid apps have limited access to the device hardware, though such access varies by mobile operating system and development framework. Hybrid apps offer app store distribution and operation without a live network connection.
 \end{itemize}
 
+\newpage
+
 For the KuDo project I had to decide which type of mobile apps I would develop, the table below summarizes using a SWOT\footnote{https://en.wikipedia.org/wiki/SWOT\_analysis} analysis the advantages and disadvantages of Native Apps:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm, keepaspectratio]{img/table11.png}
+    \includegraphics[width=13cm, keepaspectratio]{img/table11.png}
  \end{figure}
+
+\newpage
 
 The table below summarizes using a SWOT analysis the advantages and disadvantages of Web-based Apps:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm, keepaspectratio]{img/table12.png}
+    \includegraphics[width=13cm, keepaspectratio]{img/table12.png}
  \end{figure}
 
 To help me decide which type of solution I should take for my KuDo project I asked myself the following questions:
@@ -176,12 +180,12 @@ To help me decide which type of solution I should take for my KuDo project I ask
  \item \textbf{How will this app be monetized effectively?} I have some experience in setting up Paypal\footnote{https://www.paypal.com/es/webapps/mpp/home}  systems but I would need some help with this issue; Again, this is an interesting challenge for me.
 \end{itemize}
 
-Summarizing, due to the type of developments I am planing to do I think the Web-based Apps solutions (pure web-based or hybrid web-based) are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting challenge that shall improve my professional background.
+Summarizing, due to the type of developments I am planing to do I think the Web-based Apps solutions (pure web-based or hybrid web-based) are the ones that best fit these purposes even though I am aware that I shall have to make an effort in learning more on HTML5, CSS3, Javascript and other web technologies but I see this as an interesting task that shall improve my professional background.
 
 In this Master Thesis I am doing the exercise of performing a deep search in the existing FLOSS Web-based App frameworks for mobile devices, selecting a couple of the most popular ones and then comparing their capabilities using a well-formed quality system like OpenBRR. I have selected OpenBRR because it was one of the 
 methodologies we analyzed in the "Project Evaluation" subject of the Master together with  QSoS\footnote{http://docencia.etsit.urjc.es/moodle/pluginfile.php/5216/mod\_resource/content/0/ComparisonOpenBRRQSoS.pdf} . 
 
-For me this subject was one of the most important ones in the whole Master and the knowledge I adquired using FLOSS metrics evaluation systemns and with other projects like QUALOSS\footnote{http://libresoft.es/research/projects/qualoss} has helped me a lot professionally.
+For me this subject was one of the most important ones in the whole Master and the knowledge I adquired using FLOSS metrics evaluation systems and with other projects like QUALOSS\footnote{http://libresoft.es/research/projects/qualoss} has helped me a lot professionally.
 
 The fact that all frameworks taken under consideration in this study are Open Source solutions is a consequence of the freedoms\footnote{https://www.gnu.org/philosophy/free-sw.html} that this kind of solutions bring us as we saw in the "Legal Aspects" subject\footnote{http://docencia.etsit.urjc.es/moodle/course/view.php?id=121}  of the Master.
 
@@ -214,11 +218,9 @@ Using only the standard web technologies such as HTML, CSS, and JavaScript, deve
 
 Appspresso is the only mobile framework that supports the device API of WAC (Wholesale Application Community) called Waikiki API\footnote{http://appspresso.com/api-reference}. Waikiki API is a JavaScript API that allows utilization of local resources such as camera, contacts, accelerometer, device status, file system, and etc. The current version Appspresso 1.0 RC supports the Waikiki API 2.0 beta.
 
-Appspresso provides an integrated development environment for Eclipse to develop apps using Appspresso Studio environment regardless of the target mobile platform. With one click of a mouse, iOS and Android apps can be built and WAC apps can be packaged. One of the best things about Appspresso studio, is the possibility to use “on the fly building” function which immediately reflects revised source code without recompiling. Thus improves the development productivity by eliminating the need for rebuilding source code and transferring app to a test mobile or an emulator. 
+Appspresso provides an integrated development environment for Eclipse to develop apps using Appspresso Studio environment regardless of the target mobile platform. With one click of a mouse, iOS and Android apps can be built and WAC apps can be packaged. One of the best things about Appspresso studio, is the possibility to use “on the fly building” function which immediately reflects revised source code by eliminating the need for rebuilding source code and transferring app to a mobile emulator. 
 
-Appspresso PDK (Plug-in Development Kit)\footnote{http://appspresso.com/developer/plug-in}   allows developers to use native language to create user-defined functions and expose them through JavaScript API. Waikiki API that is built into Appspresso was also developed using Appspresso PDK. Appspresso runtime provides a plug-in architecture for supporting custom plug-ins and Appspresso Studio includes a PDK necessary for those plug-in developments.
-
-Figure below shows how a simple "Hello World" application would look like:
+Appspresso PDK (Plug-in Development Kit)\footnote{http://appspresso.com/developer/plug-in}   allows developers to use native language to create user-defined functions and expose them through JavaScript API. Waikiki API that is built into Appspresso was also developed using Appspresso PDK. Appspresso runtime provides a plug-in architecture for supporting custom plug-ins and Appspresso Studio includes a PDK necessary for those plug-in developments. Figure below shows how a simple "Hello World" application would look like:
 
 \begin{figure}[H]
     \centering
@@ -233,16 +235,16 @@ Appspresso code is maintained using a GitHub repository\footnote{https://github.
 
 Sencha Touch\footnote{http://www.sencha.com/products/touch}, a high-performance HTML5 mobile application framework, is the cornerstone of the Sencha HTML5 platform. Built for enabling world-class user experiences, Sencha Touch is the only framework that enables developers to build powerful apps that work on iOS, Android, BlackBerry, Windows Phone, and more.
 
-Sencha Touch 2.2 is the latest version that adds support for BlackBerry 10, Internet Explorer 10, and adds the lightning fast new list and the all-new AnimationQueue features to let developers achieve unparalleled performance. Sencha Touch also provides enhanced native support through the Sencha Mobile Packager, which is integrated into the free Sencha Cmd\footnote{http://www.sencha.com/products/sencha-cmd/download} . 
+Sencha Touch 2 is the latest version that adds support for BlackBerry 10, Internet Explorer 10, and adds the lightning fast new list and the all-new AnimationQueue features to let developers achieve unparalleled performance. Sencha Touch also provides enhanced native support through the Sencha Mobile Packager, which is integrated into the free Sencha Cmd\footnote{http://www.sencha.com/products/sencha-cmd/download} tool. 
 
-The product is available through a dual licensing schema, providing commercial and GPLv3\footnote{http://gplv3.fsf.org/}  versions. 
+The product is available through a dual licensing schema, providing commercial and GPLv3\footnote{http://gplv3.fsf.org/} versions. 
 
 \subsection{Appcelerator Titanium}
 \label{Appcelerator Titanium} 
 
 The Titanium SDK\footnote{http://www.appcelerator.com} lets you develop native, hybrid and mobile web applications from a single codebase. 
 
-Titanium Studio\footnote{http://www.appcelerator.com/platform/titanium-studio/} is an extended version of Aptana Studio, the open source Integrated Development Environment (IDE) tool for web development. In addition to Aptana Studio's web features, Titanium Studio adds the opportunity to develop Appcelerator Titanium Mobile projects, for Android, iOS and Mobile Web. With Titanium Studio it easy to get started to produce professional cross-platform Android, iOS and HTML5-based Mobile Web applications. It includes integrated templates, sample applications and vast amounts of educational material. It helps you to manage the whole project lifecycle of your Titanium projects, including writing, add-on module usage, debugging, integrating with cloud services, through to testing, packaging, and deployment.
+Titanium Studio\footnote{http://www.appcelerator.com/platform/titanium-studio/} is an extended version of Aptana Studio, the open source Integrated Development Environment (IDE) tool for web development. In addition to Aptana Studio's web features, Titanium Studio adds the opportunity to develop Appcelerator Titanium Mobile projects, for Android, iOS and Mobile Web. With Titanium Studio it is easy to get started to produce professional cross-platform Android, iOS and HTML5-based Mobile Web applications. It includes integrated templates, sample applications and a vast amount of educational material. It helps you to manage the whole project lifecycle of your Titanium projects, including writing, add-on module usage, debugging, integrating with cloud services, through to testing, packaging, and deployment.
 
 \begin{figure}[H]
     \centering
@@ -250,7 +252,7 @@ Titanium Studio\footnote{http://www.appcelerator.com/platform/titanium-studio/} 
     \caption{\textit{Titanium Simple Example project structure}}
  \end{figure}
 
-Titanium's unique trait among the various available cross platform mobile solutions is that it creates truly native apps. This is in contrast to web-based solutions that deliver functionality via an enhanced web view. Titanium, not wanting to be limited by the native web view, has engaged in a much deeper integration with the underlying platforms. This gives Titanium developers the ability to leverage native UI components and services, as well as near-native performance, features you won't find in other cross platform mobile development solution. Titanium provides a deep, yet highly-reusable development platform, featuring nearly 100\% code reuse across desktop apps and over 80\% reuse across mobile apps. Appcelerator licenses Titanium under the Apache 2 license\footnote{https://www.apache.org/licenses/LICENSE-2.0.html}  and is free for both personal and commercial use.
+Titanium's unique trait among the various available cross platform mobile solutions is that it creates truly native apps. This is in contrast to web-based solutions that deliver functionality via an enhanced web view. Titanium, not wanting to be limited by the native web view, has engaged in a much deeper integration with the underlying platforms. This gives Titanium developers the ability to leverage native UI components and services, as well as near-native performance, features you will not find in other cross platform mobile development solutions. Titanium provides a deep, yet highly-reusable development platform, featuring nearly 100\% code reuse across desktop apps and over 80\% reuse across mobile apps. Appcelerator licenses Titanium under the Apache 2 license\footnote{https://www.apache.org/licenses/LICENSE-2.0.html}  and is free for both personal and commercial use.
 
 At the Titanium web site, we can discover a large number of references and documentation related to some topics such as: UI fundamentals, how to works with local and remote data source, media API use, debugging, distribution, best practices and recommendations, among others. Which is a great guide for beginners and advanced developers.
 
@@ -261,7 +263,7 @@ IPFaces\footnote{http://www.ipfaces.org/} is a framework for simple creation of 
 
 Each iPFaces application consists of two main parts: Thin iPFaces client for mobile devices and the server part with application logic and definition of iPFaces views, that basically  is a standard web module. iPFaces provides libraries for easy definition of iPFaces forms for the presentation layer of the application for all supported server platforms (ASP.Net, Java and PHP). The architecture and design logic are not limited in any manner and you may use your usual and tested procedures. 
 
-Figure shows how is the interaction between both sides, generating simple GET/POST requests from the server side by returning iPFaces forms definition in XML format.
+Figure shows how is the interaction between both sides, generating simple HTTP GET/POST requests from the server side by returning iPFaces forms definition in XML format.
 
 \begin{figure}[H]
     \centering
@@ -269,18 +271,18 @@ Figure shows how is the interaction between both sides, generating simple GET/PO
     \caption{\textit{iPFaces Client/Server interaction}}
  \end{figure}
 
-To programming an application for  cross mobile devices with IPFaces, knowledge of specific mobile device platform is not required.  All that we need,  is to install the general iPFaces client to the mobile device in the standard way and file the address of your iPFaces server upon its first launch. The iPFaces client is supplied for free for various mobile platforms as a standard part of the entire solution.
+For programming an application for  cross mobile devices with IPFaces, knowledge of specific mobile device platform is not required.  All that we need,  is to install the general iPFaces client to the mobile device in the standard way and file the address of your iPFaces server upon its first launch. The iPFaces client is supplied for free for various mobile platforms as a standard part of the entire solution.
 
 The server part of the iPFaces technology is fully opened, both for non-commercial and commercial use under a BSD licence\footnote{http://opensource.org/licenses/BSD-3-Clause}, more information can be found in the developers site\footnote{http://sourceforge.net/projects/ipfaces/files/1.3/} .
 
 \subsection{MoSync}
 \label{MoSync} 
 
-The MoSync\footnote{http://www.mosync.com/}  is an open-source SDK rich environment that make easy to develop cross-platform mobile application for all major mobile platforms from a single code base. The SDK enables mobile developers to build and compile apps for up to nine different platforms at once, using C/C++ or HTML5/JavaScript, or a combination of both to create hybrid apps.
+The MoSync\footnote{http://www.mosync.com/} is an open-source SDK rich environment that make easy to develop cross-platform mobile application for all major mobile platforms from a single code base. The SDK enables mobile developers to build and compile apps for up to nine different platforms at once, using C/C++ or HTML5/JavaScript, or a combination of both to create hybrid apps.
 
-With the MoSync SDK\footnote{http://www.mosync.com/docs/sdk/index.html}  it is possible to build applications with HTML5, JavaScript, and CSS without needing to write a single line of C/C++ code. Also, we can build hybrid apps that use HTML5/JavaScript for the user interface and C/C++ for the heavy lifting. 
+With the MoSync SDK\footnote{http://www.mosync.com/docs/sdk/index.html} it is possible to build applications with HTML5, JavaScript, and CSS without needing to write a single line of C/C++ code. Also, we can build hybrid apps that use HTML5/JavaScript for the user interface and C/C++ for the heavy lifting. 
 
-The MoSync IDE is based on Eclipse, although there have made several modification in order to make it a great tool for cross-platform mobile application development,  and added  some unique MoSync features. The IDE lets you edit both HTML5/JavaScript (great for defining user interfaces) and C/C++ (ideal for any heavy lifting your app needs to do).
+The MoSync IDE is based on Eclipse\footnote{http://www.mosync.com/docs/sdk/tools/guides/ide/tour-of-the-mosync-sdk-ide/index.html} in order to make it a great tool for cross-platform mobile application development with some unique MoSync features. The IDE lets you edit both HTML5/JavaScript (great for defining user interfaces) and C/C++ (ideal for any heavy lifting your app needs).
 
 \begin{figure}[H]
     \centering
@@ -288,7 +290,7 @@ The MoSync IDE is based on Eclipse, although there have made several modificatio
     \caption{\textit{MoSync IDE based on Eclipse}}
  \end{figure}
  
-Also, the MoSync IDE provides a default emulator called  “MoRE”. MoRE is a  virtual machine that directly executes MoSync bytecode and  it allow us to emulate most devices in MoSync's device/platform, including  multitouch emulation. Of course, we can also use native emulators from the IDE, like the Android Emulator and iPhone/iOS Simulator, and run the application in those too.
+Also, the MoSync IDE provides a default emulator called  “MoRE”\footnote{http://www.mosync.com/docs/sdk/tools/guides/emulators/more-mosync-runtime-environment/index.html}. MoRE is a  virtual machine that directly executes MoSync bytecode and  it allow us to emulate most devices in MoSync's device/platform, including  multitouch emulation. Of course, we can also use native emulators from the IDE, like the Android Emulator and iPhone/iOS Simulator, and run the application in those too.
 
 MoSync JDK is licensed under a GPL v2.0\footnote{https://www.gnu.org/licenses/gpl-2.0.html}  license, the code is available in the corresponding GitHGub repository\footnote{https://github.com/MoSync/MoSync}  and more information can be found in the project developers web site\footnote{http://www.mosync.com/docs/index.html} .
 
@@ -306,8 +308,7 @@ The project code is available in the corresponding GitHub repository\footnote{ht
 
 Apache Cordova\footnote{https://cordova.apache.org/} is a set of device APIs that allow a mobile app developer to access native device function such as the camera or accelerometer from JavaScript. Also, combined with a UI framework such as jQuery Mobile or Dojo Mobile or Sencha Touch, this allows a smartphone app to be developed with just HTML, CSS, and JavaScript.
 
-When using the Cordova APIs, an app can be built without any native code (Java, Objective-C, etc) from the app developer. Instead, web technologies are used, and they are hosted in the app itself locally (generally not on a remote http server). And because these JavaScript APIs are consistent across multiple device platforms and built on web standards, the app should be portable to other device platforms with minimal to no changes.
-Apps using Cordova are still packaged as apps using the platform SDKs, and can be made available for installation from each device's app store.
+When using the Cordova APIs, an app can be built without any native code (Java, Objective-C, etc) from the app developer. Instead, web technologies are used, and they are hosted in the app itself locally (generally not on a remote http server). And because these JavaScript APIs are consistent across multiple device platforms and built on web standards, the app should be portable to other device platforms with minimal changes. Apps using Cordova are still packaged as apps using the platform SDKs, and can be made available for installation from each device's app store.
 
 Cordova provides a set of uniform JavaScript libraries that can be invoked, with device-specific native backing code for those JavaScript libraries. Cordova is available for the following platforms: iOS, Android, Blackberry, Windows Phone, Palm WebOS, Bada, and Symbian.
 
@@ -320,8 +321,8 @@ Dojo Mobile\footnote{http://dojotoolkit.org/features/mobile}  is a HTML5 mobile 
 
 The framework provides the following capabilities:
 \begin{itemize}
-\item Includes a new set of components designed from scratch with mobile in mind, including forms and databinding. Switches, Sliders, Lists, Actions etc.
-\item Is integrated with the new MVC and Application Controller packages.
+\item Includes a new set of components designed from scratch with mobile in mind, including forms with the proper databinding data access objects, event actions handlers and a toolkit of graphical UI widgets with switches, sliders, lists, etc..
+\item It is integrated with the MVC Application Controller package.
 \item Mobile themes are optimized for performance, using the latest techniques, such as CSS3 icons. Themes are built using CSS and parameterized using Less.js, making it very easy to change styling such as colors across an entire theme in one place — including graphical components such as charts and gauges.
 \item Comes with default themes for iOS, Android and Blackberry out of the box for the core mobile widgets, so you can match the native look and feel that users are already accustomed to working with.
 \item There are specific Dojo plugins for the most common IDEs in the market, the most popular is the one integrated in Aptana/Eclipse\footnote{http://dojotoolkit.org/features/tools} . 
@@ -336,11 +337,11 @@ Figure below shows an example of development using Dojo Mobile toolkit:
     \caption{\textit{Dojo Mobile toolkit example}}
  \end{figure}
 
-The project is hosted by the Dojo Foundation\footnote{http://dojofoundation.org/mobile}, and the mobile toolkit is licensed under BSD and Academic Free License (AFL) v3.0\footnote{http://opensource.org/licenses/AFL-3.0} open source licenses. More information can be found in the project Community web site\footnote{http://dojotoolkit.org/community/} .
+The project is hosted by the Dojo Foundation\footnote{http://dojofoundation.org/mobile}, and the mobile toolkit is licensed under BSD and Academic Free License (AFL) v3.0\footnote{http://opensource.org/licenses/AFL-3.0} open source licenses. More information can be found in the project Community web site\footnote{http://dojotoolkit.org/community/}.
 
 \section{Selected frameworks}
 \label{sec:selected}
-Taking this list as a baseline I have selected jQuery Mobile and Sencha Touch to be the solutions that I am going to analyze using Open BRR methodology because I consider are the most complete ones for my purposes in the context of the KuDo project.
+Taking the previous list as a baseline I have selected jQuery Mobile and Sencha Touch to be the solutions that I am going to analyze using Open BRR methodology because I consider are the most complete ones for my purposes in the context of the KuDo project.
 
 In the next sections I explain how I have applied the Open BRR metrics and the detailed results I have got during this trade-off study.
 
@@ -740,7 +741,7 @@ The table below summarizes using a SWOT analysis, the advantages and disadvantag
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm, keepaspectratio]{img/table42.png}
+    \includegraphics[width=13cm, keepaspectratio]{img/table42.png}
  \end{figure}
 
 \subsection{Sencha Touch Results}
@@ -755,7 +756,7 @@ The final score for Sencha Touch is 3.723, which is a lower score than the one w
 
 In the \textbf{Functionality} category, we can see that most of the requirements are covered. The framework seems to be strong in areas like easy to install and use, compliance with HTML, CSS3 standards for the web, themes customization and availability of 3rd party plugins/extensions. 
 
-Also the development environment which is a key part of the implementation process is fully covered. In the case of Sencha, there is a dedicated plugin for Eclipse IDE\cite{sencha Eclipse Plugin}  which makes easier the development as this is the IDE I am used to use. Also Sencha Touch provides Sencha Architect\cite{sencha Architect} which is a tool that provides sketching and drag\&drop graphical desing features.
+Also the development environment which is a key part of the implementation process is fully covered. Sencha Touch comes with Sencha Architect\cite{sencha Architect} which is a tool that provides sketching and drag\&drop graphical desing features and includes a dedicated plugin for Eclipse IDE\cite{sencha Eclipse Plugin}. The problem is that the whole Sencha Architect suite comes with a commercial license and it is not free.
 
 One important pitfall for Sencha Mobile is that it is focused on running well in Webkit\footnote{https://www.webkit.org/}  based web browsers, for that reason multiplatform support in Black Berry and Nokia devices is not guaranteed.
 
@@ -808,7 +809,7 @@ The table below summarize using a SWOT analysis the advantages and disadvantages
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm, keepaspectratio]{img/table43.png}
+    \includegraphics[width=13cm, keepaspectratio]{img/table43.png}
  \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -837,7 +838,9 @@ As a final conclusion, I would say that if you intend to design business-friendl
 
 Beginning this year I started working on a new personal project that I called 'KuDo', this is the first time I am going to setup a start-up project from scratch but it has been a long time since I had the idea to do it. 
 
-The first step I took was to define the activity I would like to perform in the start-up  and give it a name, for me it was clear that the new project should be focused in software development and after some "brainstorming" I saw some niche of opportunitties in the educational field and therefore decided to focus the activity in providing lightweight web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets etc... the name "KuDo" was also part of that brainstorming activity :-)
+The first step I took was to define the activity I would like to perform in the start-up  and give it a name, for me it was clear that the new project should be focused in software development and after some "brainstorming" I saw some niche of opportunitties in the educational field and therefore decided to focus the activity in providing lightweight web-based applications for educational purposes that can be easily run in mobile devices such as smartphones, tablets etc... the name "KuDo" was also part of that brainstorming activity.
+
+\newpage
 
 The second step was to look in the market which frameworks were available for mobile apps development, if it was better to go for a native, an hybrid or a web-based solution, and after selecting which approach was better then perform a deep trade-off to be able to take one of these frameworks as baseline solution for my own implementations. This has been the aim of this Master Thesis, during this process I have learnt a lot in terms of web-based technologies, mobile apps and QA metrics.
 
@@ -856,7 +859,7 @@ As a final thougth, now with the crisis which unfortunately is affecting profess
 \chapter{Apendix A: Sencha Touch "Hello World" example}
 \label{Apendix A: Sencha Touch "Hello World" example}
 
-The first step for implementing Sencha Touch "Hello World" example is to download\footnote{http://www.sencha.com/products/touch/download/} the Open Source version (GNU GPL license v3) of the framework to our local computer, in our example we have used the latest stable version (2.2.1). Once the download is finished, we have to unzip the file "sencha-touch-2.2.1-gpl.zip" and within we shall find a setup file with instructions for the installation.
+The first step for implementing Sencha Touch "Hello World" example is to download\footnote{http://www.sencha.com/products/touch/download/} the Open Source version (GNU GPL license v3) of the framework to our local computer, in our example we have used the latest stable version (2.2.1). Once the download is finished, we have to unzip the file "sencha-touch-2.2.1-gpl.zip" and a new folder shall be created. Within that folder we shall find a "setup" file with the proper installation instructions.
 
 \begin{figure}[H]
     \centering
@@ -868,8 +871,8 @@ Sencha Touch is composed of two main components: Sencha Touch SDK\footnote{http:
 
 \begin{itemize}
  \item Java Runtime Environment version 1.7\footnote{http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html}, version 1.6 also works, but 1.7 is better in terms of performances.
- \item Ruby version 1.9.3\footnote{http://www.ruby-lang.org/en/downloads/} .
- \item A proper HTTP server with PHP support like Apache\footnote{https://httpd.apache.org/}.
+ \item Ruby version 1.9.3\footnote{http://www.ruby-lang.org/en/downloads/}.
+ \item A HTTP server with PHP support like Apache\footnote{https://httpd.apache.org/}.
 \end{itemize}
 
 First we unzip the Sencha CMD zipped file in our local file system and second we unzip the Sencha SDK within the HTTP server deployment folder, in the case of Apache under the 'htdocs' folder. Once we have the two components deployed we run Sencha CMD server executing the following command on a terminal:
@@ -907,7 +910,7 @@ Once the environment is setup I have imported my project and all its Sencha SDK 
     \caption{\textit{Sencha Touch KuDo project in Eclipse}}
  \end{figure}
  
-We can run the example within Eclipse embedded HTTP server or deploy it in our Apache server directly, the results is shown in figure below and there example can be accessed online in the following url of my blog:\\ 
+We can run the example within Eclipse embedded HTTP server or deploy it in our Apache server directly, the result is shown in figure below and the example can be accessed online in the following url of my blog:\\ 
 
 \url{http://eparrillae.net/kudo/sencha/}
 
@@ -950,7 +953,7 @@ After that, the necessary dependencies must be configured:
     \caption{\textit{jQuery Mobile Eclipse project dependencies configuration}}
  \end{figure}
 
-Within the default sample code I introduced two separate pages one for Home and other for Info, as it is in the Sencha sample, working with pages markup and navbar widget\footnote{http://api.jquerymobile.com/category/widgets/}, also the look\&feel of the sample was updated accordingly using 'Themeroller' tool\footnote{http://jquerymobile.com/themeroller/} to make it similar to the Sencha sample. Figure below shows the updated code for jQuery Mobile:
+Within the default sample code I introduced two separate pages one for "Home" and other for "Info", as it is in the Sencha sample, working with pages markup and navbar widget\footnote{http://api.jquerymobile.com/category/widgets/}. Also the look\&feel of the sample was updated accordingly using 'Themeroller' tool\footnote{http://jquerymobile.com/themeroller/} to make it similar to the Sencha sample. Figure below shows the updated code for jQuery Mobile:
 
 \begin{figure}[H]
     \centering
